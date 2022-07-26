@@ -1,4 +1,7 @@
-# Front
+# aiq-website
+Repository for AIQ Website
+
+It took me about 10 minutes to come up with the name for this repo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
