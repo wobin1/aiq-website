@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="mt-auto d-flex flex-column flex-md-row align-items-center">
-        <div class="intro-text p-3 main-font">AIQ is an innovation-driven company focused on data, defence and intelligence technologies.</div>
+        <div class="intro-text p-3 f-poppins">AIQ is an innovation-driven company focused on data, defence and intelligence technologies.</div>
         <div class="col-md-2 float-end p-0 pt-3 p-md-5 fs-6 text-white-50 mobile-tabs" style="padding-right:0!important">
           <div class="p-0 border border-gray rounded h-100 d-flex flex-row flex-md-column justify-content-between">
             <div class="p-2 col border-bottom border-gray other-link"><button class="w-100 h-100 btn btn-outline-secondary border-0 text-md-start text-center" (click)="openEnd(content)"><span class="d-md-none d-sm-block text-center"><i class="fa fa-plus fs-3"></i><br/></span>WHO WE ARE <span class="d-none d-md-block float-end"><i class="fa fa-plus fs-3"></i></span></button></div>
@@ -26,14 +26,23 @@
   </section>
 
   <ng-template #content let-offcanvas>
-    <div class="offcanvas-header">
-      <h4 class="offcanvas-title">Who we are</h4>
-      <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
+    <div class="offcanvas-header" style="z-index: 2">
+      <h4 class="offcanvas-title f-poppins">Who we are</h4>
+      <button type="button" class="btn-close" (click)="offcanvas.dismiss('Cross click')"></button>
     </div>
-    <div class="offcanvas-body">
+    <div class="offcanvas-body f-nunito">
+      <div id="menu-wrapper" class=" border border-gray">
+        <div class="d-flex align-items-start h-100">
+          <div class="nav flex-column nav-tabs tabs-right vertical-text mt-auto h-75" role="tablist" aria-orientation="vertical">
+            <li class="mt-auto nav-link fw-bold d-inline" data-bs-toggle="pill" role="tab"  style="padding-top: 100px; width: 130px;">WHO WE ARE</li>
+            <li class="mt-auto nav-link fw-bold" data-bs-toggle="pill" role="tab"  style="padding-top: 100px; width: 130px;">WHAT WE DO</li>
+            <li class="mt-auto nav-link fw-bold" data-bs-toggle="pill" role="tab"  style="padding-top: 100px; width: 130px;">CONTACT US</li>
+            <li class="mt-auto nav-link fw-bold" data-bs-toggle="pill" role="tab"  style="padding-top: 100px; width: 130px;">LEGAL</li>
+          </div>
+        </div>
+      </div>
       <p>body here&hellip;</p>
       <div class="text-end">
-        <button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Close</button>
       </div>
     </div>
   </ng-template>

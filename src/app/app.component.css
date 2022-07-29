@@ -24,6 +24,32 @@
     border-color: gray !important
 }
 
+
+#menu-wrapper {
+    position: absolute;
+    top: 0;
+    right:0;
+    height: 100vh;
+    width: 50px;
+    font-size: 0.7rem;
+    /* background-color: red; */
+}
+
+.vertical-text.tabs-right>li {
+-webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+transform: rotate(90deg);
+}
+.vertical-text.tabs-left>li {
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+transform: rotate(-90deg);
+}
+
 @media only screen and (max-width: 768px){
     #globe-bg {
         width: 105vw;
