@@ -4,10 +4,10 @@
     <!-- <div class="top row"></div> -->
     <div class="d-flex p-md-5 flex-column justify-content-between h-100">
       <div class="d-flex p-3">
-        <div class="me-auto fw-bolder fs-2">AIQ</div>
+        <div class="me-auto fw-bolder fs-1">AIQ</div>
         <div class="float-end text-end d-none d-md-block">
           <p class="fs-6 text-white-50">
-            For enquiries <br/>
+            For enquiries: <br/>
             <a class="btn-link fs-5 text-white-50" href="mailto:info@aiq.ng">info@aiq.ng</a>
           </p>
         </div>
@@ -16,9 +16,9 @@
         <div class="intro-text p-3 main-font">AIQ is an innovation-driven company focused on data, defence and intelligence technologies.</div>
         <div class="col-md-2 float-end p-0 pt-3 p-md-5 fs-6 text-white-50 mobile-tabs" style="padding-right:0!important">
           <div class="p-0 border border-gray rounded h-100 d-flex flex-row flex-md-column justify-content-between">
-            <div class="p-2 col border-bottom border-gray other-link"><button class="w-100 h-100 btn btn-outline-secondary border-0 text-md-start text-center" (click)="openEnd(content)"><span class="d-md-none d-sm-block text-center">+<br/></span>WHO WE ARE <span class="d-none d-md-block float-end">+</span></button></div>
-            <div class="p-2 col border-bottom border-gray mid-link"><button class="w-100 h-100 btn btn-outline-secondary border-0 text-md-start text-center" (click)="openEnd(content)"><span class="d-md-none d-sm-block text-center">+<br/></span>WHAT WE DO <span class="d-none d-md-block float-end">+</span></button></div>
-            <div class="p-2 col other-link"><button class="w-100 h-100 btn btn-outline-secondary border-0 text-md-start text-center" (click)="openEnd(content)"><span class="d-md-none d-sm-block text-center">+<br/></span>WORK WITH US<span class="d-none d-md-block float-end">+</span></button></div>
+            <div class="p-2 col border-bottom border-gray other-link"><button class="w-100 h-100 btn btn-outline-secondary border-0 text-md-start text-center" (click)="openEnd(content)"><span class="d-md-none d-sm-block text-center"><i class="fa fa-plus fs-3"></i><br/></span>WHO WE ARE <span class="d-none d-md-block float-end"><i class="fa fa-plus fs-3"></i></span></button></div>
+            <div class="p-2 col border-bottom border-gray mid-link"><button class="w-100 h-100 btn btn-outline-secondary border-0 text-md-start text-center" (click)="openEnd(content)"><span class="d-md-none d-sm-block text-center"><i class="fa fa-plus fs-3"></i><br/></span>WHAT WE DO <span class="d-none d-md-block float-end"><i class="fa fa-plus fs-3"></i></span></button></div>
+            <div class="p-2 col other-link"><button class="w-100 h-100 btn btn-outline-secondary border-0 text-md-start text-center" (click)="openEnd(content)"><span class="d-md-none d-sm-block text-center"><i class="fa fa-plus fs-3"></i><br/></span>WORK WITH US<span class="d-none d-md-block float-end"><i class="fa fa-plus fs-3"></i></span></button></div>
           </div>
         </div>
       </div>
@@ -27,11 +27,11 @@
 
   <ng-template #content let-offcanvas>
     <div class="offcanvas-header">
-      <h4 class="offcanvas-title">Offcanvas title</h4>
+      <h4 class="offcanvas-title">Who we are</h4>
       <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
     </div>
     <div class="offcanvas-body">
-      <p>One fine body&hellip;</p>
+      <p>body here&hellip;</p>
       <div class="text-end">
         <button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Close</button>
       </div>

@@ -2,17 +2,17 @@
 html,body {
     min-height: 100%;
     background-color: #001020;
-    /* overscroll-behavior-y: none; */
+    overscroll-behavior-y: none;
     scroll-behavior: smooth;
     height: -webkit-fill-available;
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
 }
 
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    min-height: -webkit-fill-available;
+    min-height: -webkit-fill-available !important;
 }
 
 main-font {
