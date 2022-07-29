@@ -1,14 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 html,body {
-    height: 100%;
+    min-height: 100%;
     background-color: #001020;
     /* overscroll-behavior-y: none; */
     scroll-behavior: smooth;
+    height: -webkit-fill-available;
     /* overflow-y: hidden; */
 }
 
 body {
-    display: flex
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: -webkit-fill-available;
 }
 
 main-font {
