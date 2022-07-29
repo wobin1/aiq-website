@@ -10,3 +10,7 @@ html,body {
 body {
     display: flex
 }
+
+main-font {
+    font-family: 'Poppins', sans-serif !important;
+}
