@@ -2,10 +2,10 @@
 html,body {
     min-height: 100%;
     background-color: #001020;
-    overscroll-behavior-y: none;
+    /* overscroll-behavior-y: none; */
     scroll-behavior: smooth;
     height: -webkit-fill-available;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 body {
