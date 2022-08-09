@@ -6,6 +6,7 @@ html,body {
     scroll-behavior: smooth;
     height: -webkit-fill-available;
     /* overflow-y: hidden; */
+    color: #001020 !important
 }
 
 body {
@@ -21,4 +22,8 @@ body {
 
 .f-nunito {
     font-family: 'Nunito', sans-serif !important;
+}
+
+.offcanvas {
+    width: 100% !important;
 }
