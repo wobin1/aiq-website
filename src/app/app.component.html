@@ -16,9 +16,9 @@
         <div class="intro-text p-3 f-poppins">AIQ is an innovation-driven company focused on data, defence and intelligence technologies.</div>
         <div class="col-md-2 float-end p-0 pt-3 p-md-5 fs-6 text-white-50 mobile-tabs" style="padding-right:0!important">
           <div class="p-0 border border-gray rounded h-100 d-flex flex-row flex-md-column justify-content-between">
-            <div class="p-2 col border-bottom border-gray other-link"><button class="w-100 h-100 btn btn-outline-secondary border-0 text-md-start text-center" (click)="openEnd(content)"><span class="d-md-none d-sm-block text-center"><i class="fa fa-plus fs-3"></i><br/></span>WHO WE ARE <span class="d-none d-md-block float-end"><i class="fa fa-plus fs-3"></i></span></button></div>
-            <div class="p-2 col border-bottom border-gray mid-link"><button class="w-100 h-100 btn btn-outline-secondary border-0 text-md-start text-center" (click)="openEnd(content)"><span class="d-md-none d-sm-block text-center"><i class="fa fa-plus fs-3"></i><br/></span>WHAT WE DO <span class="d-none d-md-block float-end"><i class="fa fa-plus fs-3"></i></span></button></div>
-            <div class="p-2 col other-link"><button class="w-100 h-100 btn btn-outline-secondary border-0 text-md-start text-center" (click)="openEnd(content)"><span class="d-md-none d-sm-block text-center"><i class="fa fa-plus fs-3"></i><br/></span>WORK WITH US<span class="d-none d-md-block float-end"><i class="fa fa-plus fs-3"></i></span></button></div>
+            <div class="p-2 col border-bottom border-gray other-link"><button class="w-100 h-100 btn btn-outline-secondary border-0 text-md-start text-center" (click)="openEnd(content)" [routerLink]="'about-us'"><span class="d-md-none d-sm-block text-center">+<br/></span>WHO WE ARE <span class="d-none d-md-block float-end">+</span></button></div>
+            <div class="p-2 col border-bottom border-gray mid-link"><button class="w-100 h-100 btn btn-outline-secondary border-0 text-md-start text-center" (click)="openEnd(content)" [routerLink]="'capabilities'"><span class="d-md-none d-sm-block text-center">+<br/></span>WHAT WE DO <span class="d-none d-md-block float-end">+</span></button></div>
+            <div class="p-2 col other-link"><button class="w-100 h-100 btn btn-outline-secondary border-0 text-md-start text-center" (click)="openEnd(content)" [routerLink]="'contact-us'"><span class="d-md-none d-sm-block text-center">+<br/></span>WORK WITH US<span class="d-none d-md-block float-end">+</span></button></div>
           </div>
         </div>
       </div>
@@ -34,56 +34,15 @@
       <div id="menu-wrapper" class=" border border-gray d-none d-md-block" style="z-index: 1">
         <div class="d-flex align-items-start h-100" style="background-color: rgb(255 255 255 / 100%);">
           <div class="nav flex-column nav-tabs tabs-right vertical-text mt-auto h-75" role="tablist" aria-orientation="vertical">
-            <li class="mt-auto nav-link fw-bold d-inline" data-bs-toggle="pill" role="tab"  style="padding-top: 100px; width: 130px;">WHO WE ARE</li>
-            <li class="mt-auto nav-link fw-bold" data-bs-toggle="pill" role="tab"  style="padding-top: 100px; width: 130px;">WHAT WE DO</li>
-            <li class="mt-auto nav-link fw-bold" data-bs-toggle="pill" role="tab"  style="padding-top: 100px; width: 130px;">CONTACT US</li>
+            <li class="mt-auto nav-link fw-bold d-inline" data-bs-toggle="pill" role="tab"  style="padding-top: 100px; width: 130px;"  [routerLink]="'about-us'">WHO WE ARE</li>
+            <li class="mt-auto nav-link fw-bold" data-bs-toggle="pill" role="tab"  style="padding-top: 100px; width: 130px;"  [routerLink]="'capabilities'">WHAT WE DO</li>
+            <li class="mt-auto nav-link fw-bold" data-bs-toggle="pill" role="tab"  style="padding-top: 100px; width: 130px;"  [routerLink]="'contact-us'">CONTACT US</li>
             <li class="mt-auto nav-link fw-bold" data-bs-toggle="pill" role="tab"  style="padding-top: 100px; width: 130px;">LEGAL</li>
           </div>
         </div>
       </div>
       <div class="h-100 menu-content" style="width:100% !important; overflow-y: scroll; z-index:-1">
-        <section class="p-3 pt-5 w-100 h-50 d-flex flex-center flex-column text-center" style="background-image: url('assets/astronaut-bg-earth-3.webp'); background-size: cover; background-repeat: no-repeat; background-color: #001020; background-blend-mode: exclusion;">
-          <div class="lines">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-          <span class="text-white fs-2 f-poppins mt-md-5">WE ARE AN AI COMPANY</span>
-          <p class="text-white fs-3">
-            AIQ delivers a bespoke array of turnkey AI solutions with a focus on defence and intelligence applications.
-          </p>
-        </section>
-        <section class="p-5 w-100 d-flex flex-center flex-column text-start" style="background-color: #fff; color: #001020">
-          <span class="fs-2">Many companies search for a purpose. </span>
-          <p class="fs-6 text-start">
-            AIQ was born with one: to unlock the insights from data and enable the defence and intelligence community in Nigeria to solve problems. 
-            <br/>This is why we are the AI solutions provider of choice for the Defence Intelligence Agency, Nigerian Air Force and the Defence Space Administration. 
-          </p>
-          <div class="p-1 p-md-5 d-flex flex-row">
-            <img src="assets/media/logos/dia-logo.png" class="img img-responsive w-10 me-auto"/>
-            <img src="assets/media/logos/naf-logo.png" class="img img-responsive w-10 me-auto"/>
-            <img src="assets/media/logos/dsa-logo.png" class="img img-responsive w-10 me-auto"/>
-          </div>
-        </section>
-        <section class="p-5 pt-5 w-100 h-75 d-flex flex-center flex-column text-start" style="background-image: url('assets/media/engie-1.png'); background-size: cover; background-repeat: no-repeat; background-color: #001020; background-blend-mode: overlay;">
-          <span class="text-white fs-2 f-poppins mt-md-5">Our mission is simple:</span>
-          <p class="text-white fs-3">
-            to use AI to improve the health, security, safety and environment of our community.
-          </p>
-          <span class="btn btn-primary mt-2 small-btn w-25">See how we do this</span>
-        </section>
-        <section class="pt-5 w-100 h-75 d-flex flex-center flex-column text-center" style="background-color: #fff;">
-          <span class="fs-2">Our Solutions. </span>
-          <p class="fs-5">
-            We provide data-based software solutions and infrastructure that cuts across three aspects of the intelligence cycle: 
-            <br/>
-            <span class='fw-bold'>Collections, Processing and Exploitation </span>
-          </p>
-          <div>
-            <img src="assets/media/solutions.png" class="img img-responsive w-75"/>
-          </div>
-        </section>
-
+        <router-outlet></router-outlet>
       </div>
     </div>
   </ng-template>

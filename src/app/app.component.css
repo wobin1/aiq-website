@@ -123,6 +123,10 @@ transform: rotate(-90deg);
     width: 10% !important;
 }
 
+.w-md-75 {
+    width: 75% !important;
+}
+
 @media only screen and (max-width: 768px){
     #globe-bg {
         width: 105vw;
@@ -175,5 +179,8 @@ transform: rotate(-90deg);
     }
     .w-10 {
         width: 25% !important
+    }
+    .w-md-75 {
+        width: 100% !important;
     }
 }

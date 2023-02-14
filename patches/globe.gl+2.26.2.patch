@@ -1,0 +1,13 @@
+diff --git a/node_modules/globe.gl/dist/globe.gl.d.ts b/node_modules/globe.gl/dist/globe.gl.d.ts
+index 08dec50..2f12607 100644
+--- a/node_modules/globe.gl/dist/globe.gl.d.ts
++++ b/node_modules/globe.gl/dist/globe.gl.d.ts
+@@ -21,7 +21,7 @@ interface GeoCoords {
+   altitude: number;
+ }
+ 
+-type PointerEventsFilterFn = (object: Object3D, data?: object) => boolean;
++type PointerEventsFilterFn = (object: Object, data?: object) => boolean;
+ 
+ // don't surface these internal props from inner ThreeGlobe
+ type ExcludedInnerProps = 'setPointOfView';
