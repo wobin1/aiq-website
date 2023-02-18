@@ -24,7 +24,7 @@
     border-color: gray !important
 }
 
-.custom-button:hover, .custom-button:active {
+.custom-button:hover, .custom-button:focus{
   background-color: #0C0C43 !important;
 }
 
@@ -135,6 +135,10 @@ transform: rotate(-90deg);
 
 .logo-width2{
   width: 20%;
+}
+
+.custom-button:active{
+  background-color: #0C0C43 !important;
 }
 
 @media only screen and (max-width: 768px){
