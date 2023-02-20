@@ -140,6 +140,12 @@ transform: rotate(-90deg);
 .custom-button:active{
   background-color: #0C0C43 !important;
 }
+.button-space{
+  margin: 0 25px 0 auto;
+}
+.text-size{
+  font-size:3.25rem;
+}
 
 @media only screen and (max-width: 768px){
     #globe-bg {
