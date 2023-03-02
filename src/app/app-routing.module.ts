@@ -4,10 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ContactUsHereComponent } from './contact-us-here/contact-us-here.component';
 
 const routes: Routes = [
   {
-    path:'',
+    path: '',
     component: WhoWeAreComponent
   },
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'contact-us',
     component: ContactUsComponent
+  },
+  {
+    path: 'contact-us-here',
+    component: ContactUsHereComponent
   }
 ];
 

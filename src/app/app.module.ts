@@ -9,13 +9,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ContactUsHereComponent } from './contact-us-here/contact-us-here.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WhoWeAreComponent,
     WhatWeDoComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    ContactUsHereComponent
   ],
   imports: [
     BrowserModule,
