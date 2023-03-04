@@ -41,7 +41,7 @@
 
   <ng-template #content let-offcanvas>
     <div class="offcanvas-header" style="z-index: 2">
-      <h4 class="offcanvas-title text-center fs-poppins fw-bolder fs-1"><img src="assets/media/logos/aiq-logo2.png"
+      <h4 class="offcanvas-title txt-center fs-poppins fw-bolder fs-1"><img src="assets/media/logos/aiq-logo2.png"
           alt="AIQ logo" class="img img-responsive logo-width2 me-auto"></h4>
       <button class="button-space btn btn-primary btn-lg" style="background-color: #171752;" (click)="openEnd(content)"
         [routerLink]="'contact-us-here'">Contact us</button>
@@ -67,5 +67,11 @@
         <router-outlet></router-outlet>
       </div>
     </div>
+    <footer class="bg-light text-center text-lg-start">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-dark" href="aiq.ng">aiq.ng</a>
+      </div>
+    </footer>
   </ng-template>
 </div>

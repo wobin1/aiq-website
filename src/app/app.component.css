@@ -159,6 +159,14 @@
   font-size: 3.25rem;
 }
 
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media only screen and (max-width: 768px) {
   #globe-bg {
     width: 105vw;
@@ -268,15 +276,24 @@
   .carousel {
     width: 9rem !important;
     height: 9rem !important;
-    margin-left: 2.5rem !important;
+    margin-left: 3rem !important;
     position: relative;
   }
 
   .carousel-button {
     font-size: .7rem !important;
   }
-  .h1{
+
+  .h1 {
     font-size: medium;
+  }
+
+  .carousel-button.prev {
+    left: -2.5rem !important;
+  }
+
+  .carousel-button.next {
+    right: -2.5rem !important;
   }
 }
 
@@ -351,9 +368,17 @@ body {
 }
 
 .carousel-button.prev {
-  left: 1rem;
+  left: -5rem;
 }
 
 .carousel-button.next {
-  right: 1rem;
+  right: -5rem;
+}
+
+li {
+  list-style: none;
+}
+
+.txt-left {
+  text-align: left !important;
 }
