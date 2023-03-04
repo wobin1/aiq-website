@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, ViewChild, AfterViewInit, ViewEncapsulation, TemplateRef   } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, AfterViewInit, ViewEncapsulation, TemplateRef } from '@angular/core';
 import * as d3 from 'd3';
 import Globe from 'globe.gl'
 import { HttpClient } from '@angular/common/http';
@@ -28,9 +28,9 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     const colorScale = d3.scaleSequentialSqrt(d3.interpolateYlGnBu);
-    
+
     const getVal = (feat: any) => feat.properties.GDP_MD_EST / Math.max(1e5, feat.properties.POP_EST);
-    
+
     this.dataRequest.subscribe((countries: any) => {
       const maxVal = Math.max(...countries.features.map(getVal));
       colorScale.domain([0, maxVal]);
@@ -47,12 +47,12 @@ export class AppComponent implements OnInit, AfterViewInit {
         .polygonsTransitionDuration(300)
         .width(this.globeVizEl.nativeElement.clientWidth)
         .height(this.globeVizEl.nativeElement.clientHeight)
-        // .borderSize(0)
+      // .borderSize(0)
 
       this.world.camera().zoom = 1.5
       this.world.controls().autoRotate = true;
       this.world.controls().autoRotateSpeed = 1.8;
-    })      
+    })
   }
 
   openEnd(content: TemplateRef<any>) {
