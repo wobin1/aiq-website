@@ -20,17 +20,17 @@
           <div class="p-0 border border-white rounded h-100 d-flex flex-row flex-md-column justify-content-between">
             <div class="p-2 col border-bottom border-white other-link"><button
                 class="w-100 h-100 btn btn-outline-secondary border-0 text-md-start text-center text-white custom-button"
-                (click)="openEnd(content)" [routerLink]="'about-us'"><span
+                 [routerLink]="'about-us'"><span
                   class="d-md-none d-sm-block text-center">+<br /></span>WHO WE ARE <span
                   class="d-none d-md-block float-end">+</span></button></div>
             <div class="p-2 col border-bottom border-white mid-link"><button
                 class="w-100 h-100 btn btn-outline-secondary border-0 text-md-start text-center text-white custom-button"
-                (click)="openEnd(content)" [routerLink]="'capabilities'"><span
+                 [routerLink]="'capabilities'"><span
                   class="d-md-none d-sm-block text-center">+<br /></span>WHAT WE DO <span
                   class="d-none d-md-block float-end">+</span></button></div>
             <div class="p-2 col other-link"><button
                 class="w-100 h-100 btn btn-outline-secondary border-0 text-md-start text-center text-white custom-button"
-                (click)="openEnd(content)" [routerLink]="'contact-us'"><span
+                 [routerLink]="'contact-us'"><span
                   class="d-md-none d-sm-block text-center">+<br /></span>WORK WITH US<span
                   class="d-none d-md-block float-end">+</span></button></div>
           </div>
@@ -57,7 +57,7 @@
             <li class="mt-auto nav-link fw-bold" data-bs-toggle="pill" role="tab"
               style="padding-top: 100px; width: 130px;" [routerLink]="'capabilities'">WHAT WE DO</li>
             <li class="mt-auto nav-link fw-bold" data-bs-toggle="pill" role="tab"
-              style="padding-top: 100px; width: 130px;" [routerLink]="'contact-us'">CONTACT US</li>
+              style="padding-top: 100px; width: 130px;" [routerLink]="'contact-us'">JOIN US</li>
             <li class="mt-auto nav-link fw-bold" data-bs-toggle="pill" role="tab"
               style="padding-top: 100px; width: 130px;" [routerLink]="'contact-us-here'">LEGAL</li>
           </div>
@@ -67,12 +67,12 @@
         <router-outlet></router-outlet>
       </div>
     </div>
-    <footer class="bg-light text-center text-lg-start">
+    <!-- <footer class="bg-light text-center text-lg-start">
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2020 Copyright:
         <a class="text-dark" href="aiq.ng">aiq.ng</a>
       </div>
-    </footer>
+    </footer> -->
   </ng-template>
 </div>
 

@@ -1,8 +1,9 @@
-import { Component, OnInit, ElementRef, ViewChild, AfterViewInit, ViewEncapsulation, TemplateRef } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, AfterViewInit, ViewEncapsulation, TemplateRef, ViewChildren, QueryList } from '@angular/core';
 import * as d3 from 'd3';
 import Globe from 'globe.gl'
 import { HttpClient } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
+import { NavigationEnd, Router } from '@angular/router';
 
 import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 
@@ -13,13 +14,15 @@ import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnInit, AfterViewInit {
+  @ViewChildren('globeViz, content') componentRefs: any;
   @ViewChild('globeViz', { static: false })
   globeVizEl!: ElementRef;
   dataRequest: any;
   world: any;
   title = 'front';
+  
 
-  constructor(private http: HttpClient, private offcanvasService: NgbOffcanvas) { }
+  constructor(private http: HttpClient, private offcanvasService: NgbOffcanvas, private router: Router) { }
 
   ngOnInit(): void {
     this.dataRequest = this.http.get<any>("./assets/data/countries-adm0.geojson");
@@ -27,6 +30,13 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+    this.router.events.forEach((event) => {
+      if(event instanceof NavigationEnd) {
+        if (event.url != "/"){
+          this.openEnd(this.componentRefs.last)
+        }
+      }
+    });
     const colorScale = d3.scaleSequentialSqrt(d3.interpolateYlGnBu);
 
     const getVal = (feat: any) => feat.properties.GDP_MD_EST / Math.max(1e5, feat.properties.POP_EST);
