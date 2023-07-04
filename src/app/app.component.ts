@@ -21,7 +21,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   world: any;
   title = 'front';
   totalOpenCanvas: number = 0;
-  
+  totalCanvas: any = [];
 
   constructor(private http: HttpClient, private offcanvasService: NgbOffcanvas, private router: Router) { }
 
@@ -37,6 +37,9 @@ export class AppComponent implements OnInit, AfterViewInit {
         if (event.url != "/"){
           this.openEnd(this.componentRefs.last)
           this.totalOpenCanvas += 1;
+          this.totalCanvas.push(this.componentRefs)
+          console.log( 'total', this.componentRefs)
+
         }
       }
     });
@@ -67,7 +70,18 @@ export class AppComponent implements OnInit, AfterViewInit {
       this.world.controls().autoRotateSpeed = 1.8;
     })
   }
+  
+  deleteAll() {
+    this.offcanvasService.dismiss();
+    this.totalOpenCanvas -= 1;
+  }
 
+  closeCanvas() {
+    for (let i = 0; i < this.totalOpenCanvas; i++) {
+      this.deleteAll()
+      console.log('delete', this.totalOpenCanvas)
+    }
+  }
   openEnd(content: TemplateRef<any>) {
     this.offcanvasService.open(content, { position: 'end' });
   }
