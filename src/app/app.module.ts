@@ -14,6 +14,7 @@ import { ContactUsHereComponent } from './contact-us-here/contact-us-here.compon
 @NgModule({
   declarations: [
     AppComponent,
+ 
     WhoWeAreComponent,
     WhatWeDoComponent,
     ContactUsComponent,
@@ -27,5 +28,5 @@ import { ContactUsHereComponent } from './contact-us-here/contact-us-here.compon
   ],
   providers: [],
   bootstrap: [AppComponent]
-})
+}) 
 export class AppModule { }

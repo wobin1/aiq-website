@@ -4,8 +4,9 @@ import Globe from 'globe.gl'
 import { HttpClient } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { NavigationEnd, Router } from '@angular/router';
+import { NgbOffcanvas  } from '@ng-bootstrap/ng-bootstrap';
 
-import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./app.component.css'],
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent implements OnInit, AfterViewInit {
   @ViewChildren('globeViz, content') componentRefs: any;
   @ViewChild('globeViz', { static: false })
@@ -20,19 +22,22 @@ export class AppComponent implements OnInit, AfterViewInit {
   dataRequest: any;
   world: any;
   title = 'front';
+  openCanvas: any = [];
   
-
+    
   constructor(private http: HttpClient, private offcanvasService: NgbOffcanvas, private router: Router) { }
 
   ngOnInit(): void {
     this.dataRequest = this.http.get<any>("./assets/data/countries-adm0.geojson");
     this.world = Globe()
   }
+ 
 
   ngAfterViewInit(): void {
+    console.log(this.router.config)
     this.router.events.forEach((event) => {
-      if(event instanceof NavigationEnd) {
-        if (event.url != "/"){
+      if(event instanceof NavigationEnd) {        
+        if (event.url != "/"){         
           this.openEnd(this.componentRefs.last)
         }
       }
@@ -65,8 +70,21 @@ export class AppComponent implements OnInit, AfterViewInit {
     })
   }
 
+
+  closeCanvas() {
+    this.router.events.forEach((event) => {
+      this.router.navigateByUrl('/');
+    })  
+  }
+
+  closeOffcanvas(content: TemplateRef<any>) {
+    console.log('contentHome', content)
+  }
+  
+
   openEnd(content: TemplateRef<any>) {
-    this.offcanvasService.open(content, { position: 'end' });
+    
+    this.offcanvasService.open(content, { position: 'end' })	 	
   }
 
 }
