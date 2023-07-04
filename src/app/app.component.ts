@@ -3,7 +3,7 @@ import * as d3 from 'd3';
 import Globe from 'globe.gl'
 import { HttpClient } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
-import { NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 
 import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 
@@ -20,6 +20,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   dataRequest: any;
   world: any;
   title = 'front';
+  totalOpenCanvas: number = 0;
   
 
   constructor(private http: HttpClient, private offcanvasService: NgbOffcanvas, private router: Router) { }
@@ -31,9 +32,11 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.router.events.forEach((event) => {
-      if(event instanceof NavigationEnd) {
+      console.log(this.totalOpenCanvas     )
+      if(event instanceof NavigationStart) {
         if (event.url != "/"){
           this.openEnd(this.componentRefs.last)
+          this.totalOpenCanvas += 1;
         }
       }
     });
