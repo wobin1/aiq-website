@@ -1,9 +1,8 @@
-import { Component, OnInit, ElementRef, ViewChild, AfterViewInit, ViewEncapsulation, TemplateRef, ViewChildren, QueryList } from '@angular/core';
-import * as d3 from 'd3';
-import Globe from 'globe.gl'
 import { HttpClient } from '@angular/common/http';
-import { Observable, throwError } from 'rxjs';
-import { NavigationEnd, NavigationStart, Router } from '@angular/router';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild, ViewChildren, ViewEncapsulation } from '@angular/core';
+import { NavigationStart, Router } from '@angular/router';
+import * as d3 from 'd3';
+import Globe from 'globe.gl';
 
 import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 
@@ -20,8 +19,8 @@ export class AppComponent implements OnInit, AfterViewInit {
   dataRequest: any;
   world: any;
   title = 'front';
-  totalOpenCanvas: number = 0;
-  totalCanvas: any = [];
+  place = true;
+ 
 
   constructor(private http: HttpClient, private offcanvasService: NgbOffcanvas, private router: Router) { }
 
@@ -32,16 +31,13 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.router.events.forEach((event) => {
-      console.log(this.totalOpenCanvas     )
       if(event instanceof NavigationStart) {
         if (event.url != "/"){
           this.openEnd(this.componentRefs.last)
-          this.totalOpenCanvas += 1;
-          this.totalCanvas.push(this.componentRefs)
-          console.log( 'total', this.componentRefs)
-
+          
         }
       }
+      
     });
     const colorScale = d3.scaleSequentialSqrt(d3.interpolateYlGnBu);
 
@@ -71,19 +67,33 @@ export class AppComponent implements OnInit, AfterViewInit {
     })
   }
   
-  deleteAll() {
-    this.offcanvasService.dismiss();
-    this.totalOpenCanvas -= 1;
-  }
 
   closeCanvas() {
-    for (let i = 0; i < this.totalOpenCanvas; i++) {
-      this.deleteAll()
-      console.log('delete', this.totalOpenCanvas)
-    }
-  }
-  openEnd(content: TemplateRef<any>) {
-    this.offcanvasService.open(content, { position: 'end' });
+    this.offcanvasService.dismiss()
+    this.router.navigate(['/']); 
   }
 
+  
+
+  async openEnd(content: any) {
+    
+    if (this.offcanvasService.activeInstance) {
+    this.offcanvasService.dismiss()
+    setTimeout(() => {
+      if(this.place) {
+        this.offcanvasService.open(content, {position: 'start'});
+        this.place=false
+      } else {
+        this.offcanvasService.open(content, {position: 'end'});
+        this.place=true
+      }
+      
+    }, 10); 
+  } else {
+    this.offcanvasService.open(content, {position: "start"});
+    
+  }
 }
+  }
+
+ 

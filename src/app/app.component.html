@@ -43,11 +43,10 @@
     <div class="offcanvas-header" style="z-index: 2">
       <h4 class="offcanvas-title txt-center fs-poppins fw-bolder fs-1"><img src="assets/media/logos/aiq-logo2.png"
           alt="AIQ logo" class="img img-responsive logo-width2 me-auto"></h4>
-      <button class="button-space btn btn-primary btn-lg" style="background-color: #171752;" (click)="openEnd(content)"
+      <button class="button-space btn btn-primary btn-lg" style="background-color: #171752;" data-bs-toggle="pill"
         [routerLink]="'contact-us-here'">Contact us</button>
-      <button type="button" class="btn-close" (click)="offcanvas.dismiss('Cross click')"></button>
+      <!-- <button type="button" class="btn-close" (click)="offcanvas.dismiss('Cross click')"></button> -->
       <button type="button" class="btn-close" (click)="closeCanvas()"></button>
-
     </div>
     <div class="offcanvas-body f-nunito p-0">
       <div id="menu-wrapper" class=" border border-white d-none d-md-block" style="z-index: 1">
