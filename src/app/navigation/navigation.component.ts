@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor() { }
+    navItems = [
+        { path: '/about-us', label: 'Analytics',  },
+        { path: '/capabilities', label: 'Members',  },
+       
+        
+      ];
 
   ngOnInit(): void {
   }
