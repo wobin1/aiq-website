@@ -1,20 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,  } from '@angular/core';
 
 @Component({
   selector: 'navigation-header',
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.css']
 })
-export class NavigationComponent implements OnInit {
+export class NavigationComponent {
 
     navItems = [
-        { path: '/about-us', label: 'Analytics',  },
-        { path: '/capabilities', label: 'Members',  },
-       
-        
+        { path: '/', label: 'Home',  },
+        { path: '/about-us', label: 'Who we are',  },
+        { path: '/capabilities', label: 'What we do',  },
+        { path: '/contact-us', label: 'Join Us',  },
       ];
+     
+      showList: boolean = false;
 
-  ngOnInit(): void {
-  }
+      onShowList = () => {
+        this.showList = !this.showList;
+      };
 
+      closeShowList = () => {
+        this.showList = false;
+      }
+    
 }

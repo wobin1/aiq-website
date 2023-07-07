@@ -167,6 +167,25 @@ a:active {
   color: inherit;
 }
 
+
+/* NEW STYLES */
+.home-btn {
+  border: 1px;
+  background: #FFFFFF;
+  min-width: 120px;
+  height: 3rem;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 16px, 28px, 16px, 28px;
+  gap: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+
+
 @media only screen and (max-width: 768px) {
   #globe-bg {
     width: 105vw;

@@ -11,6 +11,7 @@ import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ContactUsHereComponent } from './contact-us-here/contact-us-here.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { NavigationComponent } from './navigation/navigation.component';
     ContactUsComponent,
     ContactUsHereComponent,
     NavigationComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

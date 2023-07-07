@@ -43,28 +43,28 @@ export class AppComponent implements OnInit, AfterViewInit {
 
     const getVal = (feat: any) => feat.properties.GDP_MD_EST / Math.max(1e5, feat.properties.POP_EST);
 
-    this.dataRequest.subscribe((countries: any) => {
-      const maxVal = Math.max(...countries.features.map(getVal));
-      colorScale.domain([0, maxVal]);
+    // this.dataRequest.subscribe((countries: any) => {
+    //   const maxVal = Math.max(...countries.features.map(getVal));
+    //   colorScale.domain([0, maxVal]);
 
-      this.world(this.globeVizEl.nativeElement)
-        .globeImageUrl('assets/earth-night.jpg')
-        .lineHoverPrecision(0)
-        .polygonsData(countries.features.filter((d: any) => d.properties.ISO_A2 !== 'AQ'))
-        .polygonAltitude(0.01)
-        .polygonCapColor((feat: any) => colorScale(getVal(feat)))
-        .polygonSideColor(() => 'rgba(0, 100, 0, 0.15)')
-        .backgroundColor("rgba(0,0,0,0)")
-        .polygonStrokeColor(() => '#111')
-        .polygonsTransitionDuration(300)
-        .width(this.globeVizEl.nativeElement.clientWidth)
-        .height(this.globeVizEl.nativeElement.clientHeight)
-      // .borderSize(0)
+    //   this.world(this.globeVizEl.nativeElement)
+    //     .globeImageUrl('assets/earth-night.jpg')
+    //     .lineHoverPrecision(0)
+    //     .polygonsData(countries.features.filter((d: any) => d.properties.ISO_A2 !== 'AQ'))
+    //     .polygonAltitude(0.01)
+    //     .polygonCapColor((feat: any) => colorScale(getVal(feat)))
+    //     .polygonSideColor(() => 'rgba(0, 100, 0, 0.15)')
+    //     .backgroundColor("rgba(0,0,0,0)")
+    //     .polygonStrokeColor(() => '#111')
+    //     .polygonsTransitionDuration(300)
+    //     .width(this.globeVizEl.nativeElement.clientWidth)
+    //     .height(this.globeVizEl.nativeElement.clientHeight)
+    //   // .borderSize(0)
 
-      this.world.camera().zoom = 1.5
-      this.world.controls().autoRotate = true;
-      this.world.controls().autoRotateSpeed = 1.8;
-    })
+    //   this.world.camera().zoom = 1.5
+    //   this.world.controls().autoRotate = true;
+    //   this.world.controls().autoRotateSpeed = 1.8;
+    // })
   }
   
 
