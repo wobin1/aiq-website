@@ -36,18 +36,32 @@
 
 <!-- SMALL SCREEN -->
 <section *ngIf="showList">
-  <section class="sideNav-container">  
-    <div>
-      <li
-        class="mt-auto nav-link fw-bold"
-        data-bs-toggle="pill"
-        role="tab"
-        style="padding-top: 100px; width: 130px; color: #fff"
-        [routerLink]="'contact-us-here'"
-        (click)="closeShowList()"
-      >
-        
-      </li>
+  <section class="sideNav-container"> 
+    <div class="backdrop">
+      <div class="sideNav-style">
+        <li
+          class="mt-auto nav-link fw-bold"
+          data-bs-toggle="pill"
+          role="tab"
+          style="padding-top: 100px; width: 130px; color: #fff"
+          [routerLink]="'contact-us-here'"
+          (click)="closeShowList()"
+        >
+        <div class="sideNav-style">
+          <li
+            class="mt-auto nav-link fw-bold"
+            data-bs-toggle="pill"
+            role="tab"
+            style="padding-top: 100px; width: 130px; color: #fff"
+            [routerLink]="'contact-us-here'"
+            (click)="closeShowList()"
+          >
+            
+          </li>
+          </div>
+        </li>
+        </div>
     </div>
+    
   </section>
 </section>

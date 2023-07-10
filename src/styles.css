@@ -1,9 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 html,body {
-    background: rgb(12,12,67);
+    /* background: rgb(12,12,67);
     background: linear-gradient(128deg, rgba(12,12,67,1) 0%, rgba(90,90,168,1) 72%); 
-    background: #171752;
-    
+    background: #171752; */
     scroll-behavior: smooth; 
      overflow-y: auto; 
      color: #001020 !important
@@ -54,6 +53,6 @@ html,body {
      but you can style the overlay scrollbars */
   html {
     scrollbar-width: thin;
-    scrollbar-color: #171752 #f1f1f1;
+    scrollbar-color: #171752 #ffffff;
     
   }
