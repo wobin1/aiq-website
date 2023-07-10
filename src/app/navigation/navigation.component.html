@@ -39,28 +39,19 @@
   <section class="sideNav-container"> 
     <div class="backdrop">
       <div class="sideNav-style">
-        <li
-          class="mt-auto nav-link fw-bold"
-          data-bs-toggle="pill"
-          role="tab"
-          style="padding-top: 100px; width: 130px; color: #fff"
-          [routerLink]="'contact-us-here'"
+          <li
+          class="f-mont"
+          *ngFor="let item of navItems"
+          [routerLink]="item.path"
+          routerLinkActive="activeNav"
           (click)="closeShowList()"
         >
-        <div class="sideNav-style">
-          <li
-            class="mt-auto nav-link fw-bold"
-            data-bs-toggle="pill"
-            role="tab"
-            style="padding-top: 100px; width: 130px; color: #fff"
-            [routerLink]="'contact-us-here'"
-            (click)="closeShowList()"
-          >
-            
-          </li>
-          </div>
+          {{ item.label }}
         </li>
-        </div>
+       <button class="btn-side">
+        Contact Us
+       </button>
+      </div>
     </div>
     
   </section>

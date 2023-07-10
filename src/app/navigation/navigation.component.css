@@ -61,6 +61,32 @@
   height: 100vh;
   background: #ffffff;
 }
+.sideNav-style li {
+  color: #171752;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 16px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+.btn-side {
+  border: 1px;
+  margin: 16px;
+  min-width: 180px;
+  height: 3rem;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #171752;
+  color: #FFFFFF;
+}
 
 @media only screen and (max-width: 768px) {
   .main-nav {
