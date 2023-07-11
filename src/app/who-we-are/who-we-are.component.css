@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--gray-900, #061c3d);
+  
 }
 .about-cover h2 {
   flex-basis: 50%;
@@ -20,12 +20,14 @@
   font-weight: 700;
   line-height: 72px;
   letter-spacing: -0.9px;
+  color: var(--gray-900, #061c3d);
 }
 .about-cover p {
   flex-basis: 30%;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
+  color: var(--gray-900, #061c3d);
 }
 
 .about-image {
@@ -37,9 +39,13 @@
 
 .mission-container {
     background:  #fff;
+    padding-top: 3rem;
 }
 .mission-contain {
-    display: flex
+    display: flex;
+    align-items: center;
+    color: #171752;
+    justify-content: space-between;
 }
 .mission-contents {
     
