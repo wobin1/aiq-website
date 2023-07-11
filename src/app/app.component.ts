@@ -30,15 +30,15 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.router.events.forEach((event) => {
-      if(event instanceof NavigationStart) {
-        if (event.url != "/"){
-          this.openEnd(this.componentRefs.last)
+    // this.router.events.forEach((event) => {
+    //   if(event instanceof NavigationStart) {
+    //     if (event.url != "/"){
+    //       this.openEnd(this.componentRefs.last)
           
-        }
-      }
+    //     }
+    //   }
       
-    });
+    // });
     const colorScale = d3.scaleSequentialSqrt(d3.interpolateYlGnBu);
 
     const getVal = (feat: any) => feat.properties.GDP_MD_EST / Math.max(1e5, feat.properties.POP_EST);

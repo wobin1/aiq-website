@@ -22,7 +22,7 @@
       </ul>
     </nav>
     <div class="btn-div">
-      <button class="f-nunito home-btn">Contact Us</button>
+      <button class="f-nunito home-btn" [routerLink]="'/contact-us-here'">Contact Us</button>
     </div>
     <div class="nav-menu" *ngIf="showList" (click)="onShowList()">
       <img  src="assets/icons/menu_close.svg" width="30px" />
@@ -48,7 +48,7 @@
         >
           {{ item.label }}
         </li>
-       <button class="btn-side">
+       <button class="btn-side" [routerLink]="'/contact-us-here'">
         Contact Us
        </button>
       </div>

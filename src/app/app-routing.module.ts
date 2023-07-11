@@ -5,12 +5,13 @@ import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ContactUsHereComponent } from './contact-us-here/contact-us-here.component';
-import { NavigationComponent } from './navigation/navigation.component';
+import { HomeComponent } from './home/home.component';
+
 
 const routes: Routes = [
   {
     path: '',
-    component: NavigationComponent
+    component: HomeComponent
   },
   {
     path: 'about-us',
