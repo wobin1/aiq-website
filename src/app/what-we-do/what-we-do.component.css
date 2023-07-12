@@ -1,0 +1,27 @@
+.section-container {
+  padding: 40px 20px;
+  background: var(--gray-00, #fff);
+}
+.section-cover {
+  width: 90%;
+  margin: 40px auto;
+}
+.section-text {
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.section-text h2 {
+  flex-basis: 45%;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.84px;
+}
+.section-text p {
+  flex-basis: 45%;
+  color: var(--gray-700, #42526b);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+}
