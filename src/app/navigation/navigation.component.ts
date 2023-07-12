@@ -8,7 +8,7 @@ import { Component,  } from '@angular/core';
 export class NavigationComponent {
 
     navItems = [
-        { path: '/', label: 'Home',  },
+        { path: '/home', label: 'Home',  },
         { path: '/about-us', label: 'Who we are',  },
         { path: '/capabilities', label: 'What we do',  },
         { path: '/contact-us', label: 'Join Us',  },

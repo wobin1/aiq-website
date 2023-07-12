@@ -36,6 +36,10 @@
   color: goldenrod;
   cursor: pointer;
 }
+.ul-list li.active {
+  color: goldenrod;
+  font-weight: 700;
+}
 .btn-div {
   display: block;
 }
@@ -80,24 +84,11 @@
   background-color: #171752;
   color: goldenrod;
 }
-
-.btn-side {
-  border: 1px;
-  margin: 16px;
-  min-width: 180px;
-  height: 3rem;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 28px;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-  background: #171752;
-  color: #FFFFFF;
-}
-.btn-side:hover {
+.sideNav-style li.active {
+  background-color: #171752;
   color: goldenrod;
 }
+
 
 @media only screen and (max-width: 768px) {
   .main-nav {

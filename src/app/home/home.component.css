@@ -11,6 +11,12 @@
   align-items: center;
   height: 90vh;
 }
+.bg-icons {
+  position: absolute;
+  width: 500px;
+  z-index: 1;
+
+}
 .first-contents {
   display: flex;
   justify-content: space-between;

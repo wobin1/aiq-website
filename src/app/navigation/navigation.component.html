@@ -12,12 +12,12 @@
     <nav class="my-10 w-md-75 main-nav">
       <ul class="d-flex gap-4 align-items-center ul-list">
         <li
-          class="cursor-pointer"
+          class="nav-list cursor-pointer f-nunito"
           *ngFor="let item of navItems"
           [routerLink]="item.path"
-          routerLinkActive="activeNav"
+          routerLinkActive="active"
         >
-          <p class="nav-list">{{ item.label }}</p>
+          {{ item.label }}
         </li>
       </ul>
     </nav>
@@ -43,14 +43,13 @@
           class="f-mont"
           *ngFor="let item of navItems"
           [routerLink]="item.path"
-          routerLinkActive="activeNav"
+          routerLinkActive="active"
           (click)="closeShowList()"
         >
           {{ item.label }}
         </li>
-       <button class="btn-side" [routerLink]="'/contact-us-here'">
-        Contact Us
-       </button>
+        <li class="f-mont" [routerLink]="'/contact-us-here'" (click)="closeShowList()" routerLinkActive="active">Contact Us</li>
+    
       </div>
     </div>
     
