@@ -32,9 +32,16 @@
   align-items: center;
   padding: 40px 20px;
 }
+.solution-contentTwo {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+}
 
 .solution-text {
-  flex-basis: 50%;
+  flex-basis: 45%;
 }
 
 .video-control {
@@ -64,6 +71,27 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
-
   cursor: pointer;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .section-text {
+    flex-direction: column;
+  }
+  .section-text h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .section-text p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .solution-content {
+    flex-direction: column;
+  }
+  .solution-contentTwo {
+    flex-direction: column;
+  }
+  
 }

@@ -32,6 +32,10 @@
   color: #ffffff;
   margin: auto 16px;
 }
+.nav-list:hover{
+  color: goldenrod;
+  cursor: pointer;
+}
 .btn-div {
   display: block;
 }
@@ -43,7 +47,7 @@
 .sideNav-container {
   right: 0;
   position: fixed;
-  top: 5rem;
+  top: 4rem;
   width: 100%;
   z-index: 300;
 }
@@ -72,6 +76,10 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 
 }
+.sideNav-style li:hover {
+  background-color: #171752;
+  color: goldenrod;
+}
 
 .btn-side {
   border: 1px;
@@ -86,6 +94,9 @@
   cursor: pointer;
   background: #171752;
   color: #FFFFFF;
+}
+.btn-side:hover {
+  color: goldenrod;
 }
 
 @media only screen and (max-width: 768px) {
