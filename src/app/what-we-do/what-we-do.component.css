@@ -12,19 +12,13 @@
   justify-content: space-between;
 }
 .section-text h2 {
-  flex-basis: 45%;
+  flex-basis: 65%;
   font-size: 56px;
   font-weight: 600;
   line-height: 60px;
   letter-spacing: -0.84px;
 }
-.section-text p {
-  flex-basis: 45%;
-  color: var(--gray-700, #42526b);
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 26px;
-}
+
 
 .solution-content {
   display: flex;
@@ -83,10 +77,7 @@
     font-size: 30px;
     line-height: 40px;
   }
-  .section-text p {
-    font-size: 16px;
-    line-height: 20px;
-  }
+
   .solution-content {
     flex-direction: column;
   }
