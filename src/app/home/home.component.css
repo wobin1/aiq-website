@@ -11,12 +11,7 @@
   align-items: center;
   height: 90vh;
 }
-.bg-icons {
-  position: absolute;
-  width: 500px;
-  z-index: 1;
 
-}
 .first-contents {
   display: flex;
   justify-content: space-between;
@@ -50,7 +45,43 @@
   border-radius: 2px;
 }
 
-/* SECOND CONTAINER */
+
+
+/* Background Images */
+.bg-icons {
+  position: absolute;
+  width: 500px;
+  z-index: 1;
+}
+
+.second-icon {
+  position: absolute;
+  width: 250px;
+  padding-top:3rem ;
+  right: 20px;
+  z-index: 1;
+}
+
+.third-icon {
+  position: absolute;
+  width: 450px;
+  left: 10px;
+}
+
+.fourth-icon {
+  position: absolute;
+  left: 5rem;
+}
+.fifth-icon {
+  position: absolute;
+}
+.sixth-icon {
+  position: absolute;
+  right: 0;
+}
+
+/*  */
+
 .second-container {
   background: #ffffff;
   min-height: 500px;
@@ -62,6 +93,7 @@
   width: 90%;
   margin: 0 auto;
   color: #171752;
+  padding: 10px 0;
 }
 .second-header {
   font-weight: 600;
@@ -115,6 +147,7 @@
 
 /* THIRD CONTAINER */
 .third-container {
+  padding-top: 3rem;
   background: #ffffff;
 }
 .third-cover {
@@ -234,7 +267,20 @@
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
+@media only screen and (max-width: 1268px) {
+.third-icon {
+  display: none;
+}
+.fourth-icon {
+  display: none;
+}
+.fifth-icon {
+  display: none;
+}
+.sixth-icon {
+  display: none;
+}
+}
 @media only screen and (max-width: 768px) {
   .home-section {
     width: 100%;
@@ -258,6 +304,14 @@
   .first-cover button {
     width: 200px;
   }
+
+  /*  */
+
+  .second-icon {
+    padding-top: 0;
+    width: 150px;
+  }
+ 
 
   /* Second */
   .second-header {

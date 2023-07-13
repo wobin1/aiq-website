@@ -39,6 +39,8 @@
 .ul-list li.active {
   color: goldenrod;
   font-weight: 700;
+  letter-spacing: 0.8px;
+
 }
 .btn-div {
   display: block;
@@ -86,6 +88,7 @@
 }
 .sideNav-style li.active {
   background-color: #171752;
+  font-weight: bold;
   color: goldenrod;
 }
 
