@@ -1,8 +1,33 @@
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 100%;
+}
 .text-size {
-	padding-right: 200px;
-	padding-left: 200px;
+	padding: 1rem 5rem 0 5rem;
+	color: #fff;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 700;
 }
 
 .big-text {
 	font-size: 3rem;
+}
+
+.scroll-Img {
+	position: relative;
+	width: 60%;
+	height: 50%;
+}
+
+
+
+
+@media only screen and (max-width: 768px) { 
+	.contact-container {
+		justify-content: center;
+	}
+	
 }
