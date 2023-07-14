@@ -36,7 +36,7 @@ html,body {
 
 /* For WebKit based browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-    width: 6px; /* Adjust width as needed */
+    width: 3px; /* Adjust width as needed */
     
   }
   

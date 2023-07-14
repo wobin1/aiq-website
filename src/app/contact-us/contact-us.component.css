@@ -41,6 +41,10 @@
 	border-radius: 6px;
 	cursor: pointer;
 }
+.contact-btn:hover {
+	border: 2px solid goldenrod;
+	color: goldenrod;
+}
 
 
 @media only screen and (max-width: 768px) { 

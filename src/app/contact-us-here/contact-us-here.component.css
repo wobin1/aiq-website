@@ -25,12 +25,15 @@
   border-radius: 8px;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 2rem;
+  padding: 20px;
+  min-height: 200px;
 }
 .google-map {
     flex-basis: 40%;
+    
 }
 .links img {
-  width: 80px;
+  width: 50px;
   margin: 1rem 1.5rem;
 }
 .links p {
@@ -51,7 +54,7 @@
     margin-bottom: 2rem;
   }
   .links-id img {
-    width: 80px;
+    width: 50px;
     margin: 1rem 1.5rem;
   }
   .links-id p {

@@ -42,6 +42,10 @@
   border-radius: 6px;
   cursor: pointer;
 }
+.btn-footer:hover {
+  border: 2px solid goldenrod;
+  color: goldenrod;
+}
 
 .footer-bottom {
   display: flex;

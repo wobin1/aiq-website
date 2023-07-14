@@ -1,6 +1,14 @@
 import { HttpClient } from '@angular/common/http';
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild, ViewChildren, ViewEncapsulation } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnInit,
+  ViewChild,
+  ViewChildren,
+  ViewEncapsulation,
+} from '@angular/core';
+import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 import * as d3 from 'd3';
 import Globe from 'globe.gl';
 
@@ -10,7 +18,7 @@ import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent implements OnInit, AfterViewInit {
   @ViewChildren('globeViz, content') componentRefs: any;
@@ -20,34 +28,39 @@ export class AppComponent implements OnInit, AfterViewInit {
   world: any;
   title = 'front';
   place = true;
- 
 
-  constructor(private http: HttpClient, private offcanvasService: NgbOffcanvas, private router: Router) { }
+  constructor(
+    private http: HttpClient,
+    
+    private offcanvasService: NgbOffcanvas,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
-    this.dataRequest = this.http.get<any>("./assets/data/countries-adm0.geojson");
-    this.world = Globe()
+    this.dataRequest = this.http.get<any>(
+      './assets/data/countries-adm0.geojson'
+    );
+    this.world = Globe();
+    
   }
 
   ngAfterViewInit(): void {
     this.router.events.subscribe((event) => {
-      console.log('click')
-      if (event instanceof NavigationEnd) {
-        window.scrollTo(0, 0);
-      }
+      // if (event instanceof NavigationEnd) {
+      //   window.scrollTo(0, 0);
+      // }
     });
     // this.router.events.forEach((event) => {
     //   if(event instanceof NavigationStart) {
     //     if (event.url != "/"){
     //       this.openEnd(this.componentRefs.last)
-          
     //     }
     //   }
-      
     // });
     const colorScale = d3.scaleSequentialSqrt(d3.interpolateYlGnBu);
 
-    const getVal = (feat: any) => feat.properties.GDP_MD_EST / Math.max(1e5, feat.properties.POP_EST);
+    const getVal = (feat: any) =>
+      feat.properties.GDP_MD_EST / Math.max(1e5, feat.properties.POP_EST);
 
     // this.dataRequest.subscribe((countries: any) => {
     //   const maxVal = Math.max(...countries.features.map(getVal));
@@ -72,34 +85,26 @@ export class AppComponent implements OnInit, AfterViewInit {
     //   this.world.controls().autoRotateSpeed = 1.8;
     // })
   }
-  
 
   closeCanvas() {
-    this.offcanvasService.dismiss()
-    this.router.navigate(['/']); 
+    this.offcanvasService.dismiss();
+    this.router.navigate(['/']);
   }
-
-  
 
   async openEnd(content: any) {
-    
     if (this.offcanvasService.activeInstance) {
-    this.offcanvasService.dismiss()
-    setTimeout(() => {
-      if(this.place) {
-        this.offcanvasService.open(content, {position: 'start'});
-        this.place=false
-      } else {
-        this.offcanvasService.open(content, {position: 'end'});
-        this.place=true
-      }
-      
-    }, 10); 
-  } else {
-    this.offcanvasService.open(content, {position: "start"});
-    
+      this.offcanvasService.dismiss();
+      setTimeout(() => {
+        if (this.place) {
+          this.offcanvasService.open(content, { position: 'start' });
+          this.place = false;
+        } else {
+          this.offcanvasService.open(content, { position: 'end' });
+          this.place = true;
+        }
+      }, 10);
+    } else {
+      this.offcanvasService.open(content, { position: 'start' });
+    }
   }
 }
-  }
-
- 

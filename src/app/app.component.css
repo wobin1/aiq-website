@@ -184,6 +184,13 @@ a:active {
   color: #171752;
 }
 
+.home-btn:hover {
+  border: 2px solid goldenrod;
+  color: goldenrod;
+  background: #0C0C43;
+}
+
+
 
 
 

@@ -7,7 +7,7 @@
         build readymade websites, mobile applications, and elaborate online
         business services.
       </p>
-      <button class="btn-footer" routerLink="/contact-us"> Let’s Work Together
+      <button class="btn-footer" (click)="navigateToContactUs('/contact-us-here')" > Let’s Work Together
         <img src="assets/icons/arrow-right.svg" width="25px" alt="i" />
         
       </button>
@@ -25,9 +25,9 @@
     </div>
     <div class="footer-links f-lexend">
       <h4>Quick Links</h4>
-      <h5>-Solution</h5>
-      <p>About</p>
-      <p>Services</p>
+      
+      <p class="my-3" style="cursor: pointer;" (click)="navigateToContactUs('/about-us')">About</p>
+      <p style="cursor: pointer;" (click)="navigateToContactUs('/capabilities')">Services</p>
     </div>
     <div class="footer-links f-lexend">
       <h4>Our solutions</h4>

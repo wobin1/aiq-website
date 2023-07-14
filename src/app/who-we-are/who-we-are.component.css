@@ -76,6 +76,11 @@
   border-radius: 6px;
   cursor: pointer;
 }
+.btn-mission:hover {
+  border: 2px solid goldenrod;
+  color: goldenrod;
+  background: #0C0C43;
+}
 .map-img {
   padding: 40px;
   flex-basis: 35%;
@@ -136,7 +141,8 @@
 }
 .box-content p {
   color: #b4bbc5;
-
+  height: 200px;
+  overflow-x: auto;
   font-size: 14px;
 margin: 0;
   font-weight: 400;
