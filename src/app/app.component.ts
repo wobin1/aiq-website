@@ -31,6 +31,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.router.events.subscribe((event) => {
+      console.log('click')
       if (event instanceof NavigationEnd) {
         window.scrollTo(0, 0);
       }

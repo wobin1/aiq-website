@@ -62,23 +62,8 @@
   z-index: 1;
 }
 
-.third-icon {
-  position: absolute;
-  width: 450px;
-  left: 10px;
-}
 
-.fourth-icon {
-  position: absolute;
-  left: 5rem;
-}
-.fifth-icon {
-  position: absolute;
-}
-.sixth-icon {
-  position: absolute;
-  right: 0;
-}
+
 
 /*  */
 
@@ -200,7 +185,7 @@
   margin: 3rem auto;
   padding: 20px;
   justify-content: center;
-  align-items: center;
+  
   gap: 40px;
   border-radius: 32px;
   background: linear-gradient(

@@ -94,7 +94,7 @@
   justify-content: space-between;
 }
 .solution-contents {
-  flex-basis: 47%;
+  flex-basis: 48%;
   /* flex-basis: 780px; */
   margin-bottom: 2rem;
   flex-grow: 0;
@@ -115,7 +115,7 @@
 }
 
 .box-content {
-  flex-basis: 20%;
+  flex-basis: 24%;
   /* flex-basis: 400px; */
   flex-grow: 0;
   border-radius: 16px;
