@@ -70,15 +70,13 @@
 
 
 @media only screen and (max-width: 768px) {
-  .section-container {
-    padding: 15px;
-  }
+ 
   .section-text {
     flex-direction: column;
   }
   .section-text h2 {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 40px; 
   }
 
   .solution-content {

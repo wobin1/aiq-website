@@ -46,21 +46,17 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     console.log()
-    this.router.events.subscribe((event) => {
+    // this.router.events.subscribe((event) => {
       
-      if (event instanceof NavigationEnd) {
-        window.scrollTo(0, 0);
-      }
-    });
+    //   if (event instanceof NavigationEnd) {
+    //     window.scrollTo(0, 0);
+    //   }
+    // });
   
  
   
   }
 
-  closeCanvas() {
-    this.offcanvasService.dismiss();
-    this.router.navigate(['/']);
-  }
 
 
 }
