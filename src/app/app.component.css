@@ -168,31 +168,6 @@ a:active {
 }
 
 
-/* NEW STYLES */
-.home-btn {
-  border: 1px;
-  background: #FFFFFF;
-  min-width: 120px;
-  height: 3rem;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
-  padding: 16px, 28px, 16px, 28px;
-  gap: 8px;
-  border-radius: 6px;
-  cursor: pointer;
-  color: #171752;
-}
-
-.home-btn:hover {
-  border: 2px solid goldenrod;
-  color: goldenrod;
-  background: #0C0C43;
-}
-
-
-
-
 
 @media only screen and (max-width: 768px) {
   #globe-bg {

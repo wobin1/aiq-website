@@ -9,8 +9,7 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 import { NavigationEnd, NavigationStart, Router } from '@angular/router';
-import * as d3 from 'd3';
-import Globe from 'globe.gl';
+
 
 import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 
@@ -30,31 +29,16 @@ export class AppComponent implements OnInit, AfterViewInit {
   place = true;
 
   constructor(
-    private http: HttpClient,
     
-    private offcanvasService: NgbOffcanvas,
+   
     private router: Router
   ) {}
 
   ngOnInit(): void {
-    this.dataRequest = this.http.get<any>(
-      './assets/data/countries-adm0.geojson'
-    );
-    this.world = Globe();
-    
+  
   }
 
   ngAfterViewInit(): void {
-    console.log()
-    // this.router.events.subscribe((event) => {
-      
-    //   if (event instanceof NavigationEnd) {
-    //     window.scrollTo(0, 0);
-    //   }
-    // });
-  
- 
-  
   }
 
 

@@ -45,6 +45,34 @@
   border-radius: 2px;
 }
 
+.home-btn {
+  border: 1px;
+  background: #FFFFFF;
+  min-width: 120px;
+  height: 3rem;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 16px, 28px, 16px, 28px;
+  gap: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #171752;
+  
+}
+.home-btn:hover .icon-wrapper:hover svg {
+  stroke: goldenrod; /* Replace with the color you want when hovering */
+}
+
+.home-btn:hover {
+  border: 2px solid goldenrod;
+  color: goldenrod;
+  background: #0C0C43;
+}
+.icon-wrapper svg {
+  transition: stroke 0.3s; /* Add a transition for a smooth color change on hover */
+}
+
 
 
 /* Background Images */
@@ -61,10 +89,6 @@
   right: 20px;
   z-index: 1;
 }
-
-
-
-
 /*  */
 
 .second-container {
