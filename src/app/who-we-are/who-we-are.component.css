@@ -86,6 +86,14 @@
   flex-basis: 35%;
 }
 
+.bg-Image {
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: exclusion;
+  height: 60vh;
+}
+
 .solution-container {
   background: linear-gradient(133deg, #171752 7.29%, #8787e7 100%);
   min-height: 500px;
@@ -219,6 +227,11 @@ margin: 0;
     font-size: 16px;
     line-height: 24px;
   }
+ 
+ .bg-Image {
+  background-position: center;
+ }
+
   .fifth-container {
     padding: 0;
    }
