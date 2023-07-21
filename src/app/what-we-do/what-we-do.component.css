@@ -67,10 +67,18 @@
   line-height: 28px;
   cursor: pointer;
 }
+.btn-details:hover {
+  border: 1px solid #171752;
+}
 
 
 @media only screen and (max-width: 768px) {
- 
+ .section-container {
+  padding: 10px;
+ }
+ .section-cover {
+  margin: 0;
+ }
   .section-text {
     flex-direction: column;
     margin: 10px 0;
