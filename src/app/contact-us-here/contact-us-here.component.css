@@ -30,7 +30,6 @@
 }
 .google-map {
     flex-basis: 40%;
-    
 }
 .links img {
   width: 50px;
@@ -77,11 +76,18 @@
   .links {
     flex-direction: column;
   }
+
   .links img {
     width: 45px;
+    text-align: center;
   }
   .links p {
     margin: 0.5rem;
     font-size: 16px;
+    text-align: center;
+  }
+  .links-id img {
+    text-align: center;
+    margin: 1rem auto;
   }
 }

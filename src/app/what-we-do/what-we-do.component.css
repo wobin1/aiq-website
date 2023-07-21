@@ -73,6 +73,7 @@
  
   .section-text {
     flex-direction: column;
+    margin: 10px 0;
   }
   .section-text h2 {
     font-size: 30px;

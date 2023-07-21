@@ -58,9 +58,8 @@
   border-radius: 6px;
   cursor: pointer;
   color: #171752;
-  
 }
-.home-btn:hover .icon-wrapper:hover svg {
+.home-btn:hover svg {
   stroke: goldenrod; /* Replace with the color you want when hovering */
 }
 
@@ -69,11 +68,7 @@
   color: goldenrod;
   background: #0C0C43;
 }
-.icon-wrapper svg {
-  transition: stroke 0.3s; /* Add a transition for a smooth color change on hover */
-}
-
-
+ 
 
 /* Background Images */
 .bg-icons {
@@ -134,7 +129,7 @@
 }
 
 .second-text p {
-  font-size: 16px;
+  font-size2023: 16px;
   line-height: 24px;
   font-weight: 300;
 }
@@ -153,10 +148,14 @@
   border-radius: 6px;
   cursor: pointer;
 }
-.btn-details:hover {
+.btn-details:hover svg {
+  stroke: goldenrod;
+}
+.btn-details:hover  {
   border: 2px solid goldenrod;
   color: goldenrod;
 }
+
 /* THIRD CONTAINER */
 .third-container {
   padding-top: 3rem;
@@ -318,7 +317,9 @@
   .first-cover button {
     width: 200px;
   }
-
+  .bg-icons  {
+    width: 100%;
+  }
   /*  */
 
   .second-icon {
