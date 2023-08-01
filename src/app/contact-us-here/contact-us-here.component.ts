@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-contact-us-here',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactUsHereComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private viewportScroller: ViewportScroller) { }
+  ngOnInit() {
+    this.scrollToTop();
+  }
+  
+  ngAfterViewInit() {
+    this.scrollToTop();
+  }
+  
+  private scrollToTop() {
+    this.viewportScroller.scrollToPosition([0, 0]);
   }
 
 }

@@ -1,0 +1,85 @@
+<footer class="footer-container">
+  <div class="footer-contain">
+    <div class="footer-contents f-lexend">
+      <h2>We are AIQ.</h2>
+      <p>
+        We care deeply about defence and intelligence problems as they affect
+        Africa. This is why we are Africa’s first defence and
+        intelligence-focused AI company.
+      </p>
+      <button class="btn-footer" [routerLink]="'/contact-us-here'">
+        Let’s Work Together
+        <!-- <img src="assets/icons/arrow-right.svg" width="25px" alt="i" /> -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M3.75 12H20.25" />
+          <path d="M13.5 5.25L20.25 12L13.5 18.75" />
+        </svg>
+      </button>
+    </div>
+    <div class="map-groupTwo">
+      <img src="assets/globeOne.png" class="img me-auto" width="100%" alt="i" />
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-img">
+      <img src="assets/icons/logo-foot.png" />
+      <p class="f-lexend">
+        your go-to AI company for bespoke and turnkey solutions in the defence
+        and intelligence industry.
+      </p>
+    </div>
+    <div class="footer-links f-lexend">
+      <h4>Quick Links</h4>
+
+      <p class="my-3" style="cursor: pointer" [routerLink]="'/about-us'">
+        About
+      </p>
+      <p style="cursor: pointer" [routerLink]="'/capabilities'">Services</p>
+    </div>
+    <div class="footer-links f-lexend">
+      <h4>Our solutions</h4>
+      <p class="my-3">Helix</p>
+      <p>Civet</p>
+    </div>
+    <div class="social-links">
+      <h4 class="f-lexend">SOCIAL</h4>
+      <a href="https://ng.linkedin.com/company/aiq-ng" target="_blank"
+        ><img
+          src="assets/icons/linkedIn.png"
+          width="120px"
+          style="margin: 5px; cursor: pointer"
+      /></a>
+      <a
+        href="https://twitter.com/aiq_ng?s=11&t=pXkuk2mEhzz2WPWADDONow"
+        target="_blank"
+        ><img
+          src="assets/icons/twitter.png"
+          width="120px"
+          style="margin: 5px; cursor: pointer"
+      /></a>
+    </div>
+  </div>
+  <div
+    style="
+      background: #e6e8ec;
+      height: 2px;
+      margin: 2rem auto 0 auto;
+      width: 90%;
+    "
+  ></div>
+  <div style="text-align: center; padding: 1.5rem">
+    <p>&copy; {{ current_year }} - AIQ. All rights reserved.</p>
+
+    <a class="text-dark">aiq.ng</a>
+  </div>
+</footer>
