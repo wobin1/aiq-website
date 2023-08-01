@@ -167,6 +167,8 @@ a:active {
   color: inherit;
 }
 
+
+
 @media only screen and (max-width: 768px) {
   #globe-bg {
     width: 105vw;
