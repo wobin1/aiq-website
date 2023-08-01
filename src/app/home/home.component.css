@@ -47,7 +47,7 @@
 
 .home-btn {
   border: 1px;
-  background: #FFFFFF;
+  background: #ffffff;
   min-width: 120px;
   height: 3rem;
   font-weight: 500;
@@ -66,9 +66,8 @@
 .home-btn:hover {
   border: 2px solid goldenrod;
   color: goldenrod;
-  background: #0C0C43;
+  background: #0c0c43;
 }
- 
 
 /* Background Images */
 .bg-icons {
@@ -80,7 +79,7 @@
 .second-icon {
   position: absolute;
   width: 200px;
-  padding-top:3rem ;
+  padding-top: 3rem;
   right: 20px;
   z-index: 1;
 }
@@ -92,7 +91,8 @@
   margin: 50px 0 0 0;
   margin-bottom: 10px;
   border-radius: 0 0 10px 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);}
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
 .second-cover {
   width: 90%;
   margin: 0 auto;
@@ -151,7 +151,7 @@
 .btn-details:hover svg {
   stroke: goldenrod;
 }
-.btn-details:hover  {
+.btn-details:hover {
   border: 2px solid goldenrod;
   color: goldenrod;
 }
@@ -211,7 +211,7 @@
   margin: 3rem auto;
   padding: 20px;
   justify-content: center;
-  
+
   gap: 40px;
   border-radius: 32px;
   background: linear-gradient(
@@ -242,7 +242,7 @@
 .fifth-container {
   color: #171752;
   background: #fff;
-  opacity: 0.8999999761581421; 
+  opacity: 0.8999999761581421;
   padding: 40px;
   margin: 40px 20px;
 }
@@ -271,8 +271,8 @@
 .card-holder {
   display: flex;
   align-items: center;
-  gap: 35px; 
- flex-basis: 50%;
+  gap: 35px;
+  flex-basis: 50%;
 }
 .img-card {
   flex-shrink: 0;
@@ -281,18 +281,9 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 1268px) {
-.third-icon {
-  display: none;
-}
-.fourth-icon {
-  display: none;
-}
-.fifth-icon {
-  display: none;
-}
-.sixth-icon {
-  display: none;
-}
+  .bg-icons {
+    width: 400px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .home-section {
@@ -317,8 +308,8 @@
   .first-cover button {
     width: 200px;
   }
-  .bg-icons  {
-    width: 100%;
+  .bg-icons {
+    width: 80%;
   }
   /*  */
 
@@ -326,7 +317,6 @@
     padding-top: 0;
     width: 150px;
   }
- 
 
   /* Second */
   .second-header {
@@ -364,9 +354,9 @@
     margin: 20px auto;
     padding: 10px;
   }
-  .fourth-cover h2{
-   font-size: 30px;
-   line-height: 35px;
+  .fourth-cover h2 {
+    font-size: 30px;
+    line-height: 35px;
   }
   .content-cover {
     flex-direction: column;
@@ -379,7 +369,7 @@
 
   /* Fifth */
   .fifth-container {
-   padding: 0;
+    padding: 0;
   }
   .fifth-cover {
     flex-direction: column;

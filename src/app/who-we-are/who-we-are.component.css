@@ -87,7 +87,6 @@
 }
 
 .bg-Image {
-  
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: exclusion;
@@ -230,6 +229,7 @@ margin: 0;
  
  .bg-Image {
   background-position: center;
+  height: 30vh;
  }
 
   .fifth-container {
