@@ -6,6 +6,7 @@ import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ContactUsHereComponent } from './contact-us-here/contact-us-here.component';
 import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
@@ -30,7 +31,8 @@ const routes: Routes = [
   {
     path: 'contact-us',
     component: ContactUsHereComponent
-  }
+  },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
