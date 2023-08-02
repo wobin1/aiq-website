@@ -276,8 +276,8 @@ a:active {
   }
 
   .carousel {
-    width: 9rem !important;
-    height: 9rem !important;
+    
+    height: 25rem !important;
     margin-left: 3rem !important;
     position: relative;
   }

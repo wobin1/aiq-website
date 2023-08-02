@@ -13,6 +13,7 @@ import { ContactUsHereComponent } from './contact-us-here/contact-us-here.compon
 import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { FooterComponent } from './footer/footer.component';
     NavigationComponent,
     HomeComponent,
     FooterComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,

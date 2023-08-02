@@ -8,12 +8,12 @@
 }
 .about-cover {
   width: 90%;
-  margin: 3.5rem auto 0 auto;
+  margin: 3.5rem auto 3rem auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.about-cover h2 {
+.mission-contents h2 {
   flex-basis: 50%;
   font-size: 50px;
   font-weight: 700;
@@ -49,8 +49,16 @@
   justify-content: space-between;
   
 }
+.mission-contain h2 {
+  flex-basis: 50%;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.84px;
+}
 .mission-contents {
   flex-basis: 50%;
+  
 }
 .mission-contents h2 {
   font-size: 56px;
@@ -87,7 +95,6 @@
 }
 
 .bg-Image {
-  
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: exclusion;
@@ -219,9 +226,19 @@ margin: 0;
     flex-direction: column;
     margin: 2.5 auto;
   }
-  .about-cover h2 {
+  .mission-contain {
+    height: 300px;
+  }
+
+  .mission-contain h2 {
     font-size: 30px;
     line-height: 40px;
+    text-align: center;
+  }
+  .btn-mission {
+    height: 2.5rem;
+    min-width: 100px;
+    margin-bottom: 2rem;
   }
   .about-cover p {
     font-size: 16px;
@@ -230,6 +247,7 @@ margin: 0;
  
  .bg-Image {
   background-position: center;
+  height: 30vh;
  }
 
   .fifth-container {
@@ -249,7 +267,7 @@ margin: 0;
    }
    .mission-contents {
     flex-basis: 90%;
-    margin: 2rem;
+    margin: 0;
 
    }
    .mission-contents h2 {
