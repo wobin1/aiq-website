@@ -16,6 +16,10 @@
   align-items: center;
 }
 
+.image {
+  cursor: pointer;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
