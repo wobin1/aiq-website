@@ -9,7 +9,7 @@
       </p>
       <button class="btn-footer" [routerLink]="'/contact-us'">
         Let’s Work Together
-        <!-- <img src="assets/icons/arrow-right.svg" width="25px" alt="i" /> -->
+       
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -27,41 +27,36 @@
       </button>
     </div>
     <div class="map-groupTwo">
-      <img
-        src="assets/globeOne.webp"
-        class="img me-auto"
-        width="100%"
-        alt="i"
-      />
+      <img src="assets/globeOne.png" class="img me-auto" width="100%" alt="i" />
     </div>
   </div>
   <div class="footer-bottom">
     <div class="footer-img">
-      <img src="assets/icons/logo-foot.webp" alt="i" />
+      <img src="assets/icons/logo-foot.png" alt="i" />
       <p class="f-lexend">
         your go-to AI company for bespoke and turnkey solutions in the defence
         and intelligence industry.
       </p>
     </div>
     <div class="footer-links f-lexend">
-      <h3>Quick Links</h3>
+      <h4>Quick Links</h4>
 
-      <h4 class="my-3" style="cursor: pointer" [routerLink]="'/about-us'">
+      <p class="my-3" style="cursor: pointer" [routerLink]="'/about-us'">
         About
-      </h4>
-      <h4 style="cursor: pointer" [routerLink]="'/capabilities'">Services</h4>
+      </p>
+      <p style="cursor: pointer" [routerLink]="'/capabilities'">Services</p>
     </div>
     <div class="footer-links f-lexend">
-      <h3>Our solutions</h3>
-      <h4 class="my-3">JIFDAS</h4>
-      <h4 class="my-3">Sentinel MIND</h4>
-      <h4>GeoAI Tool</h4>
+      <h4>Our solutions</h4>
+      <p class="my-3">JIFDAS</p>
+      <p class="my-3">Sentinel MIND</p>
+      <p>GeoAI Tool</p>
     </div>
     <div class="social-links">
       <h4 class="f-lexend">SOCIAL</h4>
       <a href="https://ng.linkedin.com/company/aiq-ng" target="_blank"
         ><img
-          src="assets/icons/linkedIn.webp"
+          src="assets/icons/linkedIn.png"
           width="120px"
           style="margin: 5px; cursor: pointer"
           alt="i"
@@ -70,7 +65,7 @@
         href="https://twitter.com/aiq_ng?s=11&t=pXkuk2mEhzz2WPWADDONow"
         target="_blank"
         ><img
-          src="assets/icons/twitter.webp"
+          src="assets/icons/twitter.png"
           width="120px"
           style="margin: 5px; cursor: pointer"
           alt="i"
@@ -87,6 +82,7 @@
   ></div>
   <div style="text-align: center; padding: 1.5rem">
     <p>&copy; {{ current_year }} - AIQ. All rights reserved.</p>
-    <p class="text-dark">aiq.ng</p>
+
+    <a href="https://aiq.ng/" class="text-dark">aiq.ng</a>
   </div>
 </footer>

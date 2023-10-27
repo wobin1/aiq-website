@@ -1,14 +1,13 @@
 <section class="nav-container">
   <div class="header-cover mx-auto pt-20">
-    <div class="fw-bolder w-10">
-      <img
-        src="assets/media/logos/aiq-logo.webp"
-        class="img img-responsive me-auto image"
+    <div class="fw-bolder w-10" >
+      <img routerLink="/"
+        src="assets/media/logos/aiq-logo.png"
+        class="img img-responsive me-auto"
         alt="AIQ logo"
         width="100%"
-        height="100%"
-        routerLink="/"
         style="cursor: pointer;"
+        height="100%"
       />
     </div>
     <nav class="my-10 w-md-75 main-nav">
@@ -33,10 +32,10 @@
       </button>
     </div>
     <div class="nav-menu" *ngIf="showList" (click)="onShowList()">
-      <img src="assets/icons/menu_close.svg" width="30px" alt="i" />
+      <img src="assets/icons/menu_close.svg" width="30px" />
     </div>
     <div class="nav-menu" *ngIf="!showList" (click)="onShowList()">
-      <img src="assets/icons/menu-fill.svg" width="30px" alt="i" />
+      <img src="assets/icons/menu-fill.svg" width="30px" alt="menu" />
     </div>
   </div>
 </section>
