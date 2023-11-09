@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { WhatWeDoComponent } from './what-we-do/what-we-do.component';
@@ -8,36 +9,38 @@ import { ContactUsHereComponent } from './contact-us-here/contact-us-here.compon
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-
 const routes: Routes = [
   {
-    path: '', redirectTo: 'home', pathMatch: 'full'  },
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full',
+  },
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
   },
   {
     path: 'about-us',
-    component: WhoWeAreComponent
+    component: WhoWeAreComponent,
   },
   {
     path: 'capabilities',
-    component: WhatWeDoComponent
+    component: WhatWeDoComponent,
   },
   {
     path: 'join-us',
-    component: ContactUsComponent
+    component: ContactUsComponent,
   },
   {
     path: 'contact-us',
-    component: ContactUsHereComponent
+    component: ContactUsHereComponent,
   },
   { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'top' })],
-
-  exports: [RouterModule]
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
