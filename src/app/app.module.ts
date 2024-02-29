@@ -14,6 +14,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { RedirectHydraComponent } from './redirect-hydra/redirect-hydra.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HomeComponent,
     FooterComponent,
     PageNotFoundComponent,
+    RedirectHydraComponent,
   ],
   imports: [
     BrowserModule,

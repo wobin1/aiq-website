@@ -8,6 +8,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ContactUsHereComponent } from './contact-us-here/contact-us-here.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { RedirectHydraComponent } from './redirect-hydra/redirect-hydra.component';
 
 const routes: Routes = [
   {
@@ -35,12 +36,18 @@ const routes: Routes = [
     path: 'contact-us',
     component: ContactUsHereComponent,
   },
+  {
+    path: 'hydra',
+    component: RedirectHydraComponent,
+  },
   { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'top' })],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
-  exports: [RouterModule],
+  imports: [RouterModule.forRoot(routes, { useHash: false, scrollPositionRestoration: 'top' })], 
+  exports: [RouterModule]
+  // imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'top' })],
+  // providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
+  // exports: [RouterModule],
 })
 export class AppRoutingModule {}
