@@ -3,10 +3,11 @@ import { HeroComponent } from './hero/hero.component';
 import { OtherProductsComponent } from './other-products/other-products.component';
 import { SolutionsComponent } from './solutions/solutions.component';
 import { NewsUpdatesComponent } from './news-updates/news-updates.component';
+import { ReviewsComponent } from './reviews/reviews.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeroComponent, OtherProductsComponent, SolutionsComponent, NewsUpdatesComponent],
+  imports: [HeroComponent, OtherProductsComponent, SolutionsComponent, NewsUpdatesComponent, ReviewsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
