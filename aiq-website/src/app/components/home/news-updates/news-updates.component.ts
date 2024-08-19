@@ -12,24 +12,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   styleUrl: './news-updates.component.css'
 })
 export class NewsUpdatesComponent {
-  // news : any[] = [];
-  // currentSlide = 0;
-
-  // constructor(private newsService: NewsService) { }
-
-  // ngOnInit(): void {
-  //     this.newsService.getNews().subscribe(response => {
-  //       this.news = response.articles.slice(0,7);
-  //     });
-  // }
-
-  // nextSlide () {
-  //   this.currentSlide = (this.currentSlide + 1) % this.news.length;
-  // }
-
-  // prevSlide () {
-  //   this.currentSlide = (this.currentSlide - 1 + this.news.length) % this.news.length;
-  // }
   news: any[] = [];
   @ViewChild('newsCarousel') newsCarousel!: ElementRef;
 
@@ -45,7 +27,8 @@ export class NewsUpdatesComponent {
       this.news = response.articles.map((article: any) => ({
         title: article.title,
         description: article.description,
-        category: 'General', // You can change this based on the API response
+        category: 'General', 
+        url: article.url,
         publishedAt: article.publishedAt
       }));
     });

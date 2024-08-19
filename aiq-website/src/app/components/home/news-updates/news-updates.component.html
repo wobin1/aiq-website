@@ -1,35 +1,30 @@
 
-
-  <section class="montserrat bg-blue-950">
-    <h1 class="font-bold text-white text-2xl"> Live News Updates </h1>
+  <div class="w-full bg-blue-950 py-10 ps-10 montserrat">
+ 
       <div class="">
-        <div class="">
-          <div class=""></div>
+     <h2 class="font-bold text-white text-4xl my-5 mx-10">Live News Updates</h2>
+      </div>
+    <div class="flex items-center justify-end my-5 me-5">
+    <button (click)="scrollLeft()" class=" bg-white text-black px-2 py-1 mx-2 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 9"><path fill="black" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="black" d="M6 8.5a.47.47 0 0 1-.35-.15l-3.5-3.5c-.2-.2-.2-.51 0-.71L5.65.65c.2-.2.51-.2.71 0s.2.51 0 .71L3.21 4.51l3.15 3.15c.2.2.2.51 0 .71c-.1.1-.23.15-.35.15Z"/></svg>
+    </button>
+    <button (click)="scrollRight()" class=" bg-white text-black px-2 py-1 mx-2 rounded-full">
+      <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 9"><path fill="black" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="black" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg>
+    </button>
+ 
+    </div>
+    <div class="ms-10">
+      <div class="flex overflow-x-auto gap-4 scrollbar-hide" #newsCarousel>
+        <div *ngFor="let newsItem of news" class="min-w-[400px] max-w-[400px] bg-white p-4 rounded-lg shadow-lg">
+          <div class="flex justify-between my-5">
+            <button class="text-xs text-orange-400 bg-orange-100 px-4 py-2  rounded-full border-2 border-transparent">{{ newsItem.category }}</button> 
+          </div>
+          <h1 class="text-2xl font-bold text-gray-700 mb-2">{{ newsItem.title }}</h1>
+          <!-- <p class="text-xs text-gray-600">{{ newsItem.url }}</p> -->
+          <span class="text-md text-gray-500">{{ newsItem.publishedAt | date:'short' }}</span>
         </div>
       </div>
    
-  </section>
-  
-
-  <div class="w-full bg-blue-900 p-4">
-    <h2 class="text-white text-2xl mb-4">Live News Updates</h2>
-    <div class="relative">
-      <div class="flex overflow-x-auto gap-4 scrollbar-hide" #newsCarousel>
-        <div *ngFor="let newsItem of news" class="min-w-[300px] max-w-[300px] bg-white p-4 rounded-lg shadow-lg">
-          <div class="flex justify-between mb-2">
-            <span class="text-xs text-orange-500">{{ newsItem.category }}</span>
-            <span class="text-xs text-gray-500">{{ newsItem.publishedAt | date:'short' }}</span>
-          </div>
-          <h3 class="text-sm font-bold text-gray-700 mb-2">{{ newsItem.title }}</h3>
-          <p class="text-xs text-gray-600">{{ newsItem.description }}</p>
-        </div>
-      </div>
-      <button (click)="scrollLeft()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-2 rounded-full">
-        &larr;
-      </button>
-      <button (click)="scrollRight()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-700 text-white p-2 rounded-full">
-        &rarr;
-      </button>
     </div>
   </div>
   
