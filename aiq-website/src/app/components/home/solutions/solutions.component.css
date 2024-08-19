@@ -1,0 +1,35 @@
+
+/* .carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+  } */
+  
+  .carousel-slide {
+    display: none;
+    transition: transform 0.9s ease-in-out;
+  }
+  
+  .carousel-slide.active {
+    display: block;
+  }
+  
+  .montserrat {
+    font-family: "Montserrat", sans-serif;
+  
+  }
+  
+  .carousel-controls {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .carousel-controls button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

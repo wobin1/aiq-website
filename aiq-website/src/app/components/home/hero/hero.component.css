@@ -1,0 +1,17 @@
+.big {
+    color:#101928;
+}
+
+.small {
+    color: rgba(23, 23, 82, 0.4);
+    /* background: -webkit-linear-gradient(320deg, #171752 3%,  112%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+ 
+}
+

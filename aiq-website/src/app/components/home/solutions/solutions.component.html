@@ -1,0 +1,42 @@
+<!-- <section class="my-10">
+<h1 class="text-center font-semibold text-5xl">We Provide Solutions For...</h1>
+<ul class="flex">
+    <li><button class="bg-blue-200 text-black font-normal text-lg px-3 py-2 hover:bg-white hover:font-semibold">Defence & Intelligence </button></li>
+    <li><button class="bg-blue-200 text-black font-normal text-lg px-3 py-2 hover:bg-white hover:font-semibold"> Journalists </button></li>
+    <li><button class="bg-blue-200 text-black font-normal text-lg px-3 py-2 hover:bg-white hover:font-semibold"> Researchers </button></li>
+    <li><button class="bg-blue-200 text-black font-normal text-lg px-3 py-2 hover:bg-white hover:font-semibold">Humanitarians</button></li>
+    <li><button class="bg-blue-200 text-black font-normal text-lg px-3 py-2 hover:bg-white hover:font-semibold">Others</button></li>
+</ul>
+</section>
+ -->
+ <section class="montserrat">
+  <h1 class="text-center text-5xl font-bold my-16">We Provide Solutions for...</h1>
+  <div class=" flex justify-center">
+    <button *ngFor="let slide of [0, 1, 2, 3, 4]; let i = index" (click)="goToSlide(i)" class="bg-blue-100 text-black font-normal text-lg px-3 py-2 mx-3 hover:bg-white hover:font-semibold rounded-full border-2 border-gray-400">
+       {{ x[i]}}
+    </button>
+  </div>
+ 
+<div class="flex justify-center">
+      
+    <div class="carousel-slide" *ngFor="let slide of [0, 1, 2, 3, 4]; let i = index"
+         [class.active]="i === currentSlideIndex">
+      <div class="flex items-center py-10">
+        <div class="w-1/2 flex justify-end mx-10">
+        <img [src]="slides[currentSlideIndex].img" alt="">
+        </div>
+        <div class="w-1/2 mx-10">
+          <div class="flex my-5">
+          <img [src] = "slides[currentSlideIndex].svg" alt="">
+          <h1 class="text-2xl font-bold mx-2 "> {{ slides[currentSlideIndex].h1 }}</h1>
+          </div>
+        <p class="text-lg w-10/12 text-justify">{{ slides[currentSlideIndex].p }}</p>
+      </div>
+      </div>
+    </div>
+   
+    
+  </div> 
+</section>
+
+  
