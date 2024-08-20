@@ -11,6 +11,7 @@ import { NgFor, CommonModule } from '@angular/common';
 export class ReviewsComponent  {
 
   @ViewChild('reviewsCarousel') reviewsCarousel!: ElementRef;
+
   reviews : any [] = [
     {
       img : '/assets/military.jpg',
@@ -21,6 +22,13 @@ export class ReviewsComponent  {
     },
     {
       img : '/assets/military.jpg',
+      text: 'The sentence about the review is what im writing here. The sentence about the review is what im writing here. The sentence about the review is what im writing here. The sentence about the review is what im writing here.',
+      name: 'Margaret Olaitan',
+      office: 'THE NIGERIAN NAVY GENERAL',
+      profile: '/assets/profile.jpg'
+    },
+    {
+      img : '/assets/image 6.jpg',
       text: 'The sentence about the review is what im writing here. The sentence about the review is what im writing here. The sentence about the review is what im writing here. The sentence about the review is what im writing here.',
       name: 'Margaret Olaitan',
       office: 'THE NIGERIAN NAVY GENERAL',
@@ -53,11 +61,11 @@ export class ReviewsComponent  {
   
 
   
-  scrollLeft() {
+  goLeft() {
     this.reviewsCarousel.nativeElement.scrollBy({ left: -300, behavior: 'smooth' });
   }
 
-  scrollRight() {
+  goRight() {
     this.reviewsCarousel.nativeElement.scrollBy({ left: 300, behavior: 'smooth' });
   }
 
