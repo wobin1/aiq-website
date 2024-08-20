@@ -27,7 +27,7 @@ export class NewsUpdatesComponent {
       this.news = response.articles.map((article: any) => ({
         title: article.title,
         description: article.description,
-        category: 'General', 
+        category: ['General','Security','Business','Sports'], 
         url: article.url,
         publishedAt: article.publishedAt
       }));

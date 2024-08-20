@@ -9,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class ReviewsComponent {
 
+  reviews : any [] = [
+    {
+      img : '',
+      text: '',
+      name: '',
+      office: '',
+      profile: ''
+    }]
+
+
 }
