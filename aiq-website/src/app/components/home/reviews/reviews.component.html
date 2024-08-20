@@ -8,9 +8,18 @@
     </div>
 </div>
 
-<div class="flex overflow-x-auto mx-10">
-<div *ngFor="let review of reviewItem">
-    <div class="max-w-[500px] max-h-[500px] p-10 mx-5 bg-[#E4E7EC] shadow-md border-2">
+
+
+<div class=" scrollbar-hide overflow-x-auto gap-5">
+    <button (click)="scrollLeft()" class="bg-black px-2 py-1 mx-2 rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 9"><path fill="white" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="white" d="M6 8.5a.47.47 0 0 1-.35-.15l-3.5-3.5c-.2-.2-.2-.51 0-.71L5.65.65c.2-.2.51-.2.71 0s.2.51 0 .71L3.21 4.51l3.15 3.15c.2.2.2.51 0 .71c-.1.1-.23.15-.35.15Z"/></svg>
+    </button>
+    <button (click)="scrollRight()" class="bg-black px-2 py-1 mx-2 rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 9"><path fill="white" d="M12.5 5h-9c-.28 0-.5-.22-.5-.5s.22-.5.5-.5h9c.28 0 .5.22.5.5s-.22.5-.5.5"/><path fill="white" d="M10 8.5a.47.47 0 0 1-.35-.15c-.2-.2-.2-.51 0-.71l3.15-3.15l-3.15-3.15c-.2-.2-.2-.51 0-.71s.51-.2.71 0l3.5 3.5c.2.2.2.51 0 .71l-3.5 3.5c-.1.1-.23.15-.35.15Z"/></svg>
+    </button>
+<div class="flex ms-20">
+<div *ngFor="let review of reviewItem" #reviewsCarousel>
+    <div class="max-w-[400px] max-h-[400px] min-w-[400px] p-10 mx-5 bg-[#E4E7EC] shadow-md border-2">
         <div class="my-5">
             <img [src]= review.image alt="" class="rounded-full">
         </div>
@@ -26,7 +35,7 @@
 
         </div>
     </div>
-       
+</div>
 </div>
 </div>
 </section>
