@@ -1,0 +1,25 @@
+<div class="mx-auto text-center py-10 w-screen max-w-3xl">
+    <button class="bg-blue-200 rounded-full px-8 py-2 mt-5 font-semibold shadow-blue-200 shadow-sm">FAQ</button>
+    <h1 class="font-bold text-5xl my-5">Top Questions</h1>
+</div>
+<!-- 
+<div class=" flex justify-center"> -->
+    <div class="max-w-[1000px]" *ngFor = "let faqItem of faq">
+        <div class="flex justify-between">
+            <h1 class="font-bold text-2xl"> {{ faqItem.question }} </h1>
+            <svg xmlns="http://www.w3.org/2000/svg" (click)="openAcc()" #open fill="none" viewBox="0 0 24 24"stroke-width="2" stroke="currentColor" class="w-5 h-5 transform rotate-180 transition-transform duration-200">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 transition-transform duration-200">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+        <div class="">
+            <p class="hidden"> {{ faqItem.answer }}</p>
+        </div>
+    </div>
+
+
+
+
+<!-- </div> -->

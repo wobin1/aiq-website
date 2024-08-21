@@ -4,10 +4,11 @@ import { OtherProductsComponent } from './other-products/other-products.componen
 import { SolutionsComponent } from './solutions/solutions.component';
 import { NewsUpdatesComponent } from './news-updates/news-updates.component';
 import { ReviewsComponent } from './reviews/reviews.component';
+import { FaqComponent } from './faq/faq.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeroComponent, OtherProductsComponent, SolutionsComponent, NewsUpdatesComponent, ReviewsComponent],
+  imports: [HeroComponent, OtherProductsComponent, SolutionsComponent, NewsUpdatesComponent, ReviewsComponent, FaqComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
