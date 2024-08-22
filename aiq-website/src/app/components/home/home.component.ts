@@ -15,26 +15,6 @@ import { ContactComponent } from './contact/contact.component';
 })
 export class HomeComponent {
 
-  video: HTMLVideoElement | null = null;
-  btn: HTMLElement | null = null;
-
-  ngAfterViewInit(): void {
-    this.video = document.getElementById('video') as HTMLVideoElement | null;
-    this.btn = document.getElementById('btn') as HTMLElement | null;
-  }
-
-  // Pause and play the video, and change the button text
-  myFunction(): void {
-    if (this.video && this.btn) {
-      if (this.video.paused) {
-        this.video.play();
-        this.btn.innerHTML = 'Pause';
-      } else {
-        this.video.pause();
-        this.btn.innerHTML = 'Play';
-      }
-    }
-  }
   
 
 }
