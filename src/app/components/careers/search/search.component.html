@@ -1,0 +1,36 @@
+<div class="mx-auto"> 
+    <div class="max-w-[1000px] mx-auto my-2" *ngFor = "let searchItem of search; let i = index">
+        <div class="flex justify-between" (click)="toggleAccordion(i)">
+            <h1 class="font-bold text-2xl mb-5"> {{ searchItem.title }} </h1>
+            <p class="text-lg"> {{ searchItem.subtext }}</p>
+            <svg xmlns="http://www.w3.org/2000/svg" *ngIf="activeIndex === i"  fill="none" viewBox="0 0 24 24"stroke-width="2" stroke="currentColor" class="w-5 h-5 transform rotate-180 transition-transform duration-200">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" *ngIf="activeIndex !== i" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 transition-transform duration-200">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+        <hr>
+        <div class="my-5"  *ngIf="activeIndex === i">
+            <p class="text-lg">  Responsibilities: </p>
+            <ul>
+                <li>Design, develop, and test software applications.</li>
+                <li> Collaborate with product managers and designers to understand user requirements.</li>
+                <li> Write clean, efficient, and maintainable code.</li>
+                <li>Participate in code reviews and provide constructive feedback.</li>
+            </ul>    
+               
+               
+                
+                Troubleshoot and resolve software defects.
+                Stay up-to-date with the latest software development technologies and trends.
+                
+                Qualifications:
+                Bachelor's degree in Computer Science or a related field.
+                Proven experience in software development with proficiency in [programming languages, e.g., Python, Java, C++].
+                Strong problem-solving and analytical skills.
+                Ability to work independently and as part of a team.
+                Excellent communication and collaboration skills.
+        </div>
+    </div>
+ </div> 
