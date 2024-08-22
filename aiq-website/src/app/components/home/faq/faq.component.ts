@@ -36,13 +36,14 @@ export class FaqComponent {
           answer : faqs.answer
         }))
 
-
-        @ViewChild('open') open!:ElementRef;
-
-
-     openAcc () {
-      this.open.nativeElement.style({display : "block"})
-     }
+        activeIndex: number | null = null;
+        toggleAccordion(index: number): void {
+          if (this.activeIndex === index) {
+            this.activeIndex = null;
+          } else {
+            this.activeIndex = index;
+          }
+        }
 
 
 
