@@ -1,8 +1,10 @@
 <div class="mx-auto"> 
     <div class="max-w-[1000px] mx-auto my-2" *ngFor = "let searchItem of search; let i = index">
-        <div class="flex justify-between" (click)="toggleAccordion(i)">
+        <div class="flex justify-between border-2 border-[#D0D5DD] shadow-md p-5" (click)="toggleAccordion(i)">
+            <div class="">
             <h1 class="font-bold text-2xl mb-5"> {{ searchItem.title }} </h1>
-            <p class="text-lg"> {{ searchItem.subtext }}</p>
+            <p class=""> {{ searchItem.subtext }}</p>
+            </div>
             <svg xmlns="http://www.w3.org/2000/svg" *ngIf="activeIndex === i"  fill="none" viewBox="0 0 24 24"stroke-width="2" stroke="currentColor" class="w-5 h-5 transform rotate-180 transition-transform duration-200">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
@@ -10,27 +12,33 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
         </div>
-        <hr>
-        <div class="my-5"  *ngIf="activeIndex === i">
-            <p class="text-lg">  Responsibilities: </p>
-            <ul>
+      
+        <div class="my-5 mx-5"  *ngIf="activeIndex === i">
+            <p class="">  Responsibilities: </p>
+            <ul class="list-disc ml-5">
                 <li>Design, develop, and test software applications.</li>
                 <li> Collaborate with product managers and designers to understand user requirements.</li>
                 <li> Write clean, efficient, and maintainable code.</li>
                 <li>Participate in code reviews and provide constructive feedback.</li>
-            </ul>    
-               
-               
-                
-                Troubleshoot and resolve software defects.
-                Stay up-to-date with the latest software development technologies and trends.
-                
-                Qualifications:
-                Bachelor's degree in Computer Science or a related field.
-                Proven experience in software development with proficiency in [programming languages, e.g., Python, Java, C++].
-                Strong problem-solving and analytical skills.
-                Ability to work independently and as part of a team.
-                Excellent communication and collaboration skills.
+                <li>Troubleshoot and resolve software defects.</li>
+                <li> Stay up-to-date with the latest software development technologies and trends.</li>
+            </ul> 
+            <p class="">Qualifications:</p> 
+            <ul class="list-disc ml-5">
+                <li>Bachelor's degree in Computer Science or a related field.</li>
+                <li>Proven experience in software development with proficiency in [programming languages, e.g., Python, Java, C++].</li>
+                <li>Strong problem-solving and analytical skills.</li>
+                <li>Ability to work independently and as part of a team.</li>
+                <li>Excellent communication and collaboration skills.</li>
+            </ul>                   
         </div>
     </div>
- </div> 
+ </div>
+ 
+ <div class="w-screen flex items-center p-8">
+    <div class="w-full rounded-2xl mx-auto p-10 text-center text-white bg-[#171752]">
+        <p class="my-5">CONVINCED?</p>
+        <h1 class="text-3xl font-bold my-5 max-w-md mx-auto"> Don’t Miss your chance to build something great </h1>
+        <button class="p-3 my-2 text-black bg-white rounded-md">Send an application</button>
+    </div>
+</div>
