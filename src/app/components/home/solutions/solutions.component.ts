@@ -44,10 +44,10 @@ export class SolutionsComponent {
       svg: 'assets/Give Money.svg'
     },
     {
-      h1: 'Slide 5 Title',
-      p: 'This is the description for slide 5.',
-      img: 'assets/image 34.jpg',
-      svg: 'assets/megaphone.svg'
+      h1: 'Others',
+      p: 'Creating a comprehensive demo without specific product details is challenging. The following outline provides a general framework for demonstrating the value proposition of an intelligence gathering product for national defense.',
+      img: 'assets/image 52.jpg',
+      svg: 'assets/categories.svg'
     }
   ];
 

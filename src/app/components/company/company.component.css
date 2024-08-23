@@ -2,3 +2,22 @@
     background-image: url('../../../../public/assets/CompanyBackground.jpg');
     background-size: cover;
 }
+
+.continents {
+    background-image: url('../../../../public/assets/continents.svg');
+    background-size: cover;
+}
+
+.bordershadow {
+    border: 1px solid;
+    border-image-source: linear-gradient(0deg, rgba(196, 218, 255, 0.2) 0%, #C4DAFF 100%);
+    box-shadow: 0px 0px 8px 0px #B8BBFE4D;
+}
+
+.heading {
+    
+    background: -webkit-linear-gradient(320deg, #171752 0%, #3434B8 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
