@@ -57,7 +57,7 @@ export class SolutionsComponent {
     this.currentSlideIndex = index;
   }
 
-   x = ["Defence and intelligence", "Journalists", "Researchers", "Humanitarians", "Others"];
+   x = ["Defence and Intelligence", "Journalists", "Researchers", "Humanitarians", "Others"];
 }
 
 
