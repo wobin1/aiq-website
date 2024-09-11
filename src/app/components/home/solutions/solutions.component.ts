@@ -21,31 +21,31 @@ export class SolutionsComponent {
   slides: Slide[] = [
     {
       h1: 'Defence and Intelligence',
-      p: 'Creating a comprehensive demo without specific product details is challenging. The following outline provides a general framework for demonstrating the value proposition of an intelligence gathering product for national defense.',
+      p: ' Enhance national security and gain a competitive edge with AI intelligence gathering and enterprise solutions.',
       img: 'assets/image 34.jpg',
       svg: 'assets/Security.svg'
     },
     {
       h1: 'Journalists',
-      p: 'Journalism made easy\! Get access to all of the latest and juicy news that can help boost the reliability and confidence in your company.',
+      p: 'Investigate stories with advanced research tools and access critical information quickly to support investigative reporting.',
       img: 'assets/image 30.jpg',
       svg: 'assets/megaphone.svg'
     },
     {
       h1: 'Researchers',
-      p: 'Creating a comprehensive demo without specific product details is challenging. The following outline provides a general framework for demonstrating the value proposition of an intelligence gathering product for national defense.',
+      p: ' Leverage AI to analyze large datasets and uncover new insights.',
       img: 'assets/image 32.jpg',
       svg: 'assets/Research.svg'
     },
     {
       h1: 'Humanitarian',
-      p: 'Creating a comprehensive demo without specific product details is challenging. The following outline provides a general framework for demonstrating the value proposition of an intelligence gathering product for national defense.',
+      p: 'Improve disaster response and resource allocation with real-time data insights.',
       img: 'assets/image 31.jpg',
       svg: 'assets/Give Money.svg'
     },
     {
       h1: 'Others',
-      p: 'Creating a comprehensive demo without specific product details is challenging. The following outline provides a general framework for demonstrating the value proposition of an intelligence gathering product for national defense.',
+      p: ' Our suites of products are also used by Law Enforcement Agencies, Hospitals, and Public and Private Offices.',
       img: 'assets/image 52.jpg',
       svg: 'assets/categories.svg'
     }

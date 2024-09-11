@@ -1,7 +1,7 @@
 <div class="mx-auto bg-gray-50 py-16">
     <div class="mt-10">
         <h5 class="font-mont text-3xl font-semibold text-center">Explore Open Roles</h5>
-        <div class="border border-gray-200 rounded-xl w-[400px] mx-auto flex items-center gap-2 my-5 p-2">
+        <div class="border border-gray-200 rounded-xl w-[280px] md:w-[400px] mx-auto flex items-center gap-2 my-5 p-2">
             <img class="w-6 h-5" src="/assets/icons/search.svg"  />
             <input class="w-11/12 bg-transparent outline-none" placeholder="Search Roles" />
         </div>
@@ -45,35 +45,17 @@
           />
         </svg>
       </div>
-      <p class="">{{ searchItem.subtext }}</p>
+      <p class="text-sm md:text-lg">{{ searchItem.subtext }}</p>
     </div>
 
     <div class="my-5 mx-5" *ngIf="activeIndex === i">
-      <p class="">Responsibilities:</p>
-      <ul class="list-disc ml-5">
-        <li>Design, develop, and test software applications.</li>
-        <li>
-          Collaborate with product managers and designers to understand user
-          requirements.
-        </li>
-        <li>Write clean, efficient, and maintainable code.</li>
-        <li>Participate in code reviews and provide constructive feedback.</li>
-        <li>Troubleshoot and resolve software defects.</li>
-        <li>
-          Stay up-to-date with the latest software development technologies and
-          trends.
-        </li>
+      <p class="font-medium">Responsibilities:</p>
+      <ul class="list-disc ml-5 mb-5">
+       <li class="text-sm md:text-lg" *ngFor="let resp of searchItem.resp">{{resp}}</li>
       </ul>
-      <p class="">Qualifications:</p>
+      <p class="font-medium">Qualifications:</p>
       <ul class="list-disc ml-5">
-        <li>Bachelor's degree in Computer Science or a related field.</li>
-        <li>
-          Proven experience in software development with proficiency in
-          [programming languages, e.g., Python, Java, C++].
-        </li>
-        <li>Strong problem-solving and analytical skills.</li>
-        <li>Ability to work independently and as part of a team.</li>
-        <li>Excellent communication and collaboration skills.</li>
+       <li class="text-sm md:text-lg" *ngFor="let resp of searchItem.qualification">{{resp}}</li>
       </ul>
     </div>
   </div>
