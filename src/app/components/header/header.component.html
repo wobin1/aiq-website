@@ -1,5 +1,5 @@
-<section class="fixed w-full z-40 border-b border-[#E4E7EC] bg-[#ffffff]">
-  <nav class="py-2 lg:py-6 container mx-auto">
+<section class="fixed w-full z-40 border-b border-[rgb(228,231,236)] bg-[#ffffff]">
+  <nav class="py-2 lg:py-4 px-4 container mx-auto">
     <div class="hidden lg:flex justify-between items-center">
       <div class="">
         <svg
@@ -33,12 +33,12 @@
         </svg>
       </div>
       <div class="">
-        <ul class="flex text-xl font-inter font-medium">
+        <ul class="flex font-inter text-base">
           <li>
             <a
-              class="mx-3 text-gray-500 font-medium  hover:text-[#101928] cursor-pointer"
+              class="mx-3 text-gray-500  hover:text-[#101928] cursor-pointer"
               routerLink="/home"
-              routerLinkActive="text-gray-900"
+              routerLinkActive="font-semibold text-gray-900"
             >
               Home
             </a>
@@ -48,7 +48,7 @@
             <a
               class="mx-3 text-gray-500 hover:text-black cursor-pointer"
               routerLink="/products"
-              routerLinkActive="text-gray-900"
+              routerLinkActive="font-semibold text-gray-900"
             >
               Products
             </a>
@@ -58,7 +58,7 @@
             <a
               class="mx-3 text-gray-500 hover:text-black cursor-pointer"
               routerLink="/company"
-              routerLinkActive="text-gray-900"
+              routerLinkActive="font-semibold text-gray-900"
             >
               Company
             </a>
@@ -67,7 +67,7 @@
             <a
               class="mx-3 text-gray-500 hover:text-black cursor-pointer"
               routerLink="/careers"
-              routerLinkActive="text-gray-900"
+              routerLinkActive="font-semibold text-gray-900"
             >
               Careers
             </a>
@@ -98,7 +98,7 @@
       <div (click)="onShowList()">
         <img src="/assets/line-dot.svg" alt="i" width="20" height="20" />
       </div>
-      <div *ngIf="showList" class="fixed w-full top-[69px] right-0 z-40">
+      <div *ngIf="showList" class="fixed w-full top-[65px] right-0 z-40">
         <div
           class="w-full bg-[#00000080] h-screen flex flex-row-reverse"
           (click)="onShowList()"

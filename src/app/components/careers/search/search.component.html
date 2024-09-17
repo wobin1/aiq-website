@@ -1,4 +1,4 @@
-<div class="mx-auto bg-gray-50 py-16">
+<div class="mx-auto bg-gray-50 py-16 px-10">
     <div class="mt-10">
         <h5 class="font-mont text-3xl font-semibold text-center">Explore Open Roles</h5>
         <div class="border border-gray-200 rounded-xl w-[280px] md:w-[400px] mx-auto flex items-center gap-2 my-5 p-2">
@@ -6,13 +6,14 @@
             <input class="w-11/12 bg-transparent outline-none" placeholder="Search Roles" />
         </div>
     </div>
+    <div class="container mx-auto">
   <div
-    class="max-w-[1000px] border border-[#D0D5DD] bg-white mx-auto my-4 rounded-md"
+    class="max-w-[1000px] border border-[#D0D5DD] bg-white mx-auto my-4 rounded-xl"
     *ngFor="let searchItem of search; let i = index"
   >
     <div class="p-5" (click)="toggleAccordion(i)">
       <div class="flex justify-between items-center">
-        <h1 class="font-bold text-2xl mb-5">{{ searchItem.title }}</h1>
+        <h1 class="font-bold text-2xl mb-3">{{ searchItem.title }}</h1>
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +46,7 @@
           />
         </svg>
       </div>
-      <p class="text-sm md:text-lg">{{ searchItem.subtext }}</p>
+      <p class="text-sm md:text-lg font-normal">{{ searchItem.subtext }}</p>
     </div>
 
     <div class="my-5 mx-5" *ngIf="activeIndex === i">
@@ -60,10 +61,11 @@
     </div>
   </div>
 </div>
+</div>
 
 <div class="w-screen flex items-center p-8 bg-gray-50">
   <div
-    class="w-full rounded-2xl mx-auto p-10 text-center text-white relative bg-[#033387]"
+    class="w-full rounded-2xl mx-auto p-10 text-center text-white relative bg-[#033387] container mx-auto"
   >
   <div class="bg-[url(/assets/icons/career-img.svg)] z-10 h-32 w-4/5 md:w-11/12 top-20 absolute bg-center bg-no-repeat"></div>
    <div class="relative z-20"> <p class="my-5">CONVINCED?</p>
