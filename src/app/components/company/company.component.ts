@@ -33,4 +33,7 @@ export class CompanyComponent {
       }));
     });
   }
+  submit() {
+    window.open('https://docs.google.com/forms/d/1l6qgyncMYDI6llD8lvct2Wz7kJjrU0rOJ5y5Aic3PPA/viewform?edit_requested=true', '_blank');
+  }
 }

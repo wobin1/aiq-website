@@ -26,7 +26,7 @@ export class SolutionsComponent {
       svg: 'assets/Security.svg'
     },
     {
-      h1: 'Journalists',
+      h1: 'Media',
       p: 'Investigate stories with advanced research tools and access critical information quickly to support investigative reporting.',
       img: 'assets/image 30.jpg',
       svg: 'assets/megaphone.svg'

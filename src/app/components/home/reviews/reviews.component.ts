@@ -1,5 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { NgFor, CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-reviews',
@@ -58,7 +59,7 @@ export class ReviewsComponent  {
     profile: review.profile
   }))
 
-  
+  constructor(private router: Router) {}
 
   
   goLeft() {
@@ -69,7 +70,9 @@ export class ReviewsComponent  {
     this.reviewsCarousel.nativeElement.scrollBy({ left: 300, behavior: 'smooth' });
   }
 
-  
+  navigateHandler() {
+    this.router.navigate(['/company']);
+  }
 }
 
 
