@@ -17,7 +17,7 @@ export class HeaderComponent {
   constructor(private router: Router) {}
 
   navItems = [
-    { path: "/", label: "Home" }, 
+    { path: "/home", label: "Home" }, 
     { path: "/products", label: "Product" },
     { path: "/company", label: "Company" },
     { path: "/careers", label: "Careers" },

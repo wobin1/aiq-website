@@ -38,6 +38,7 @@
             <a
               class="mx-3 text-gray-500  hover:text-[#101928] cursor-pointer"
               routerLink="/home"
+              [routerLinkActiveOptions]="{ exact: true }"
               routerLinkActive="font-semibold text-gray-900"
             >
               Home
@@ -103,15 +104,26 @@
           class="w-full bg-[#00000080] h-screen flex flex-row-reverse"
           (click)="onShowList()"
         >
-          <div class="w-11/12 sm:w-1/2 h-screen bg-[#f5f7f9]">
-            <div *ngFor="let item of navItems">
+          <div class="w-full h-1/2 bg-[#f5f7f9] overflow-y-auto">
+            <div *ngFor="let item of navItems" class="flex flex-col items-center">
               <button
-                class="font-semibold"
                 [routerLink]="[item.path]"
-                class="py-3 px-6 m-2 rounded-lg border w-4/5 text-start border-gray-400 text-white bg-[#171752]"
+                routerLinkActive="font-semibold text-gray-900"
+                [routerLinkActiveOptions]="{ exact: item.path === '/home' }" 
+                class="py-3 px-6 m-2 rounded-lg w-4/5 text-center text-[#171752]"
               >
                 {{ item.label }}
-            </button>
+              </button>
+            </div>
+            
+            <div class="font-inter flex justify-center my-5">
+              <a
+                ><button
+                  class="bg-blue-950 py-3 px-6 font-medium rounded-md text-white hover:bg-slate-300 hover:text-blue-800"
+                >
+                  Get in Touch
+                </button></a
+              >
             </div>
           </div>
         </div>
