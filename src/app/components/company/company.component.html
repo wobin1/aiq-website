@@ -1,12 +1,19 @@
-<div class="flex items-center w-screen h-screen lg:h-screen bg">
-  <div class="flex flex-col justify-center h-full container px-8 mx-auto font-inter">
-    <h1 class="font-bold text-3xl md:text-5xl text-white my-2">About AIQ</h1>
-    <p class="text-white max-w-2xl text-base md:text-lg lg:leading-7">
-      AIQ is a pioneering African company specializing in artificial intelligence (AI) solutions for defense and intelligence organizations.
-      In the defence and intelligence sector, AIQ's bespoke and turnkey solutions deliver a strategic edge. Leveraging AI, advanced algorithms, and machine learning techniques, we help organizations convert data into valuable insights, automate the routine, and make informed decisions that propel operational success. Experience the AIQ advantage and empower your operations like never before.
-      We are proud to be redefining the future of intelligence through technology in Africa, driving positive change and contributing to a safer, more secure future.
+<div class="flex flex-col lg:flex-row items-center w-screen max-w-[1200px] mx-auto h-screen lg:h-screen bg">
+  <div class="flex flex-col basis-[100%] lg:basis-1/2 justify-center h-screen lg:h-full container px-8 mx-auto font-inter">
+    <h1 class="font-bold text-3xl md:text-5xl text-gray-800 my-2">About AIQ</h1>
+    <p class="text-gray-500 text-base w-full lg:max-w-[630px] md:text-lg lg:leading-7">
+      We are at the forefront of harnessing artificial intelligence to redefine the landscape of national
+      defense intelligence. Our cutting-edge solutions empower decision-makers with actionable insights
+      derived from complex data sets. With a deep understanding of the unique challenges faced by defense
+      agencies, we deliver tailored digital products that enhance operational efficiency, bolster security,
+      and accelerate mission success. Our commitment to innovation and data-driven solutions sets us apart
+      as a trusted partner in safeguarding national interests.
 
     </p>
+  </div>
+
+  <div class="image basis-1/2 w-full flex md:flex-col lg:flex justify-center items-center">
+    <img src="assets/earth-map.png" class="object-fill w-[300px] lg:w-auto lg:h-auto" alt="">
   </div>
 </div>
 
@@ -55,13 +62,17 @@
     </h1>
   </div>
 
-  <div class="flex gap-4 w-full flex-col lg:flex-row py-8 max-w-[900px] mx-auto">
-    <div class="text-white flexl flex-col justify-center h-full">
+  <div class="flex gap-4 w-full flex-col justify-center items-center lg:flex-row py-8 max-w-[900px] mx-auto">
+    <div class="text-white flexl flex-col justify-center items-center h-full">
 
       <!-- <h1 class="text-4xl mt-4">Core Values</h1> -->
 
       <p class="w-full text-lg max-w-[450px] mt-4 leading-7">
         Working at AIQ means confronting challenges with Audaciousness, Big-headedness and Creativity despite the situation.
+      </p>
+      <br>
+      <p class="w-full text-lg max-w-[450px] mt-4 leading-7">
+        We celebrate diversity and are committed to creating an inclusive environment for all team members.
       </p>
 
     </div>
@@ -72,55 +83,62 @@
         <div class="flex transition-transform duration-500 ease-in-out" >
           <!-- Card 1 -->
           <div *ngIf="currentIndex==1" class="min-w-full p-4">
-            <div class="max-w-[300px]  w-full h-[300px]   rounded-xl bordershadow continents">
-              <div class="p-5">
+            <div class="max-w-[400px]  w-full h-[350px]   rounded-xl bordershadow continents">
+              <div class="px-5 py-4">
                 <h1 class="text-7xl font-bold my-4 heading">A</h1>
                 <p class="text-white text-2xl my-2 max-w-sm">
                   CHUTZ <br />
                   PAZ
                 </p>
-                <p class="text-white text-lg my-2">Audaciousness</p>
+                <p class="text-white text my-2">("gall, brazen nerve, incredible 'guts' ")</p>
+
+                <p class="text-white text-sm">
+                  For us at AIQ, assertiveness is the norm; reticence or "being reserved" risks being left behind by the competition.
+                </p>
               </div>
             </div>
           </div>
           <!-- Card 2 -->
           <div *ngIf="currentIndex==2" class="min-w-full p-4">
-            <div class="max-w-[300px] w-full h-[300px]  rounded-xl bordershadow continents ">
+            <div class="max-w-[400px]  w-full h-[400px]  rounded-xl bordershadow continents ">
               <div class="p-5">
                 <h1 class="text-7xl font-bold heading my-4">B</h1>
                 <p class="text-white text-2xl my-2 max-w-sm">
                   ROSH<br />
                   GADOL
                 </p>
-                <p class="text-white text-lg my-2">Big Headedness</p>
+                <p class="text-white  my-2">("Improvisation over discipline, challenging the chief over respect for hierarchy. ")</p>
+                <p class="text-white text-sm">"Rosh gadol" thinking means following orders but doing so in the best possible way, using judgment, and investing whatever effort is necessary.</p>
               </div>
             </div>
           </div>
 
           <!-- Card 3 -->
           <div *ngIf="currentIndex==3" class="min-w-full p-4">
-            <div class="max-w-[300px] w-full  h-[300px]  rounded-lg bordershadow continents">
-              <div class="p-5">
+            <div class="max-w-[400px] w-full  h-[400px]  rounded-lg bordershadow continents">
+              <div class="p-4">
                 <h1 class="text-7xl font-bold heading my-4">C</h1>
                 <p class="text-white text-2xl my-2 max-w-sm">
                   BIT<br />
                   ZUA
                 </p>
-                <p class="text-white text-lg my-2">Creativeness</p>
+                <p class="text-white my-2">(Having an "Immigrant's Mentality")</p>
+                <p class="text-white text-sm my-2">At AlQ you have drive." You don't see what you've got to lose; you see what you could win. That's the attitude we have here - across the entire population.</p>
               </div>
             </div>
           </div>
 
           <!-- Card 4 -->
           <div *ngIf="currentIndex==4" class="min-w-full p-4">
-            <div class="max-w-[300px] w-full h-[300px]  rounded-lg bordershadow continents">
-              <div class="p-5">
+            <div class="max-w-[400px] w-full h-[400px]  rounded-lg bordershadow continents">
+              <div class="p-4">
                 <h1 class="text-7xl font-bold heading my-4">D</h1>
                 <p class="text-white text-2xl my-2 max-w-sm">
                   DAV<br />
                   KA
                 </p>
-                <p class="text-white text-lg my-2">Despite the Situation</p>
+                <p class="text-white text my-2">("despite" with "rub their nose in it" twist")</p>
+                <p class="text-white text-sm ">For us, we pride in the availability of challenges "the more they exist, the more we will succeed" We believe that we benefit by seeing "obstacles as the way" and finding the hidden lessons in all of our challenges</p>
               </div>
             </div>
           </div>
