@@ -1,4 +1,4 @@
-<div class="mx-auto bg-gray-50 py-16 px-10">
+<div class="mx-auto bg-gray-50 py-16 px-8 lg:px-10">
   <div class="mt-10">
     <h5 class="font-mont text-3xl font-semibold text-center">
       Explore Open Roles
@@ -15,7 +15,7 @@
   </div>
   <div class="container mx-auto">
     <div
-      class="max-w-[1000px] border border-[#D0D5DD] bg-white mx-auto my-4 rounded-xl"
+      class="max-w-[1000px] border w-full border-[#D0D5DD] bg-white mx-auto my-4 rounded-xl"
       *ngFor="let searchItem of search; let i = index"
     >
       <div class="p-5" (click)="toggleAccordion(i)">
@@ -53,17 +53,17 @@
           />
         </svg>
       </div>
-      <p class="text-sm md:text-lg font-normal text-gray-800">{{ searchItem.subtext }}</p>
+      <p class="text-lg md:text-lg font-normal text-gray-800">{{ searchItem.subtext }}</p>
     </div>
 
     <div class="my-5 mx-5" *ngIf="activeIndex === i">
       <p class="font-medium">Responsibilities:</p>
       <ul class="list-disc ml-5 mb-5">
-       <li class="text-sm md:text-lg text-gray-500 letter-spacing-0.05" *ngFor="let resp of searchItem.resp">{{resp}}</li>
+       <li class="text-lg md:text-lg text-gray-500 letter-spacing-0.05 lg:leading-10" *ngFor="let resp of searchItem.resp">{{resp}}</li>
       </ul>
       <p class="font-medium">Qualifications:</p>
       <ul class="list-disc ml-5">
-       <li class="text-sm md:text-lg text-gray-500 letter-spacing-0.1" *ngFor="let resp of searchItem.qualification">{{resp}}</li>
+       <li class="text-lg md:text-lg text-gray-500 letter-spacing-0.1 lg:leading-10" *ngFor="let resp of searchItem.qualification">{{resp}}</li>
       </ul>
     </div>
   </div>
@@ -75,7 +75,7 @@
     <div
       class="bg-white mx-auto w-11/12 md:w-2/3 py-10 px-4 md:px-16 rounded-2xl"
     >
-      <h3 class="font-bold text-lg md:text-2xl text-center my-5">
+      <h3 class="font-medium text-lg md:text-2xl lg:leading-8 text-gray-500 text-center my-5">
         Ready to collaborate with like-minded professionals? Click here to join
         a vibrant community where innovation meets teamwork. Let’s build
         something great together!
@@ -105,10 +105,10 @@
     ></div>
     <div class="relative z-20">
       <p class="my-5">CONVINCED?</p>
-      <h1 class="text-3xl font-bold my-5 max-w-md mx-auto">
+      <h1 class="text-3xl lg:leading-10 font-bold my-5 max-w-md mx-auto">
         Don’t Miss your chance to build something great
       </h1>
-      <button class="p-3 my-2 text-black bg-white rounded-md">
+      <button (click)="submit()" class="p-3 my-2 text-black bg-white rounded-md">
         Send an application
       </button>
     </div>
