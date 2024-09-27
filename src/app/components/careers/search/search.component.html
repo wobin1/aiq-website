@@ -46,17 +46,17 @@
           />
         </svg>
       </div>
-      <p class="text-sm md:text-lg font-normal">{{ searchItem.subtext }}</p>
+      <p class="text-sm md:text-lg font-normal text-gray-800">{{ searchItem.subtext }}</p>
     </div>
 
     <div class="my-5 mx-5" *ngIf="activeIndex === i">
       <p class="font-medium">Responsibilities:</p>
       <ul class="list-disc ml-5 mb-5">
-       <li class="text-sm md:text-lg" *ngFor="let resp of searchItem.resp">{{resp}}</li>
+       <li class="text-sm md:text-lg text-gray-500 letter-spacing-0.05" *ngFor="let resp of searchItem.resp">{{resp}}</li>
       </ul>
       <p class="font-medium">Qualifications:</p>
       <ul class="list-disc ml-5">
-       <li class="text-sm md:text-lg" *ngFor="let resp of searchItem.qualification">{{resp}}</li>
+       <li class="text-sm md:text-lg text-gray-500 letter-spacing-0.1" *ngFor="let resp of searchItem.qualification">{{resp}}</li>
       </ul>
     </div>
   </div>

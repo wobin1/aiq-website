@@ -14,7 +14,7 @@
         class="hidden lg:block absolute right-40"
       /> -->
         <p
-          class="text-base text-center md:text-xl bg-white lg:text-justify m-auto font-normal text my-5 max-w-3xl"
+          class="text-base text-center md:text-xl bg-white lg:text-justify-center m-auto font-normal text my-5 max-w-3xl"
         >
         Our mission is to unlock the insights from data and enable members of the defence and intelligence communities to derive actionable intelligence, faster.
         </p>
@@ -40,9 +40,9 @@
             style="width: 100%; height: 288px"
           ></div>
         </div>
-        <a routerLink="/company"
-          ><button
-            class="bg-blue-950 relative z-10 py-4 px-12 my-6 font-inter font-medium rounded-md text-white transition-colors hover:bg-slate-300 hover:text-blue-800"
+        <a
+          ><button (click)="route('contact-us')"
+            class="bg-blue-950 py-3 px-6 font-medium rounded-md text-white hover:bg-slate-300 hover:text-blue-800"
           >
             Get in Touch
           </button></a
