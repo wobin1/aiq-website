@@ -1,8 +1,8 @@
 <div class="flex items-center w-screen h-screen lg:h-screen bg">
   <div class="flex flex-col justify-center h-full container px-8 mx-auto font-inter">
     <h1 class="font-bold text-3xl md:text-5xl text-white my-2">About AIQ</h1>
-    <p class="text-white max-w-2xl text-sm md:text-base lg:leading-7">
-      AIQ is a pioneering African company specializing in artificial intelligence (AI) solutions for defense and intelligence organizations. 
+    <p class="text-white max-w-2xl text-base md:text-lg lg:leading-7">
+      AIQ is a pioneering African company specializing in artificial intelligence (AI) solutions for defense and intelligence organizations.
       In the defence and intelligence sector, AIQ's bespoke and turnkey solutions deliver a strategic edge. Leveraging AI, advanced algorithms, and machine learning techniques, we help organizations convert data into valuable insights, automate the routine, and make informed decisions that propel operational success. Experience the AIQ advantage and empower your operations like never before.
       We are proud to be redefining the future of intelligence through technology in Africa, driving positive change and contributing to a safer, more secure future.
 
@@ -11,32 +11,32 @@
 </div>
 
 <div class="py-10 bg-slate-100">
-  
+
   <div class="flex flex-row-reverse justify-center rounded-3xl">
-    <div class="flex items-center rounded-s-2xl max-w-xl bg-white">
+    <div class="flex items-center rounded-s-2xl max-w-xl py-4 lg:py-0 bg-white">
       <div class="mx-2 md:mx-10 px-4">
         <div class="flex">
           <img src="assets/Vision.svg" alt="" />
           <h1 class="text-4xl mx-2 font-semibold p-4">Vision</h1>
         </div>
-        <p class=" leading-7">
+        <p class=" text-lg leading-7">
           To be the leading provider of AI-driven intelligence solutions in Africa, transforming data into decisive action for a safer, more secure world
         </p>
       </div>
     </div>
-    
+
     <div class="rounded-s-2xl hidden md:block">
       <img src="assets/image 46.jpg" alt="" />
     </div>
   </div>
   <div class="flex justify-center rounded-3xl my-5">
-    <div class="flex items-center rounded-s-2xl max-w-xl bg-white">
+    <div class="flex items-center rounded-s-2xl max-w-xl py-4 lg:py-0 bg-white">
       <div class="mx-2 md:mx-10 p-3">
         <div class="flex">
           <img src="assets/Overview.svg" alt="" />
           <h1 class="text-4xl mx-2 font-semibold">Mision</h1>
         </div>
-        <p class="my-2 leading-7">
+        <p class="my-2 text-lg leading-7">
           To harness the power of artificial intelligence to deliver bespoke and turnkey intelligence solutions that empower defense and intelligence communities to derive actionable insights faster, ensuring national security and operational superiority.
         </p>
       </div>
@@ -58,16 +58,16 @@
     <div class="text-white flexl flex-col justify-center h-full">
 
       <h1 class="text-4xl mt-4">Core Values</h1>
-  
-      <p class="w-full max-w-[450px] mt-4 leading-7">
-        We celebrate diversity and are committed to creating an inclusive environment 
-        for all team members. Our core values - Audaciousness (Chutszpah), Big headedness 
-        (Rosh Gadol), and Creativity (Bitzua) Despite the situation (Davka) represent our 
+
+      <p class="w-full text-lg max-w-[450px] mt-4 leading-7">
+        We celebrate diversity and are committed to creating an inclusive environment
+        for all team members. Our core values - Audaciousness (Chutszpah), Big headedness
+        (Rosh Gadol), and Creativity (Bitzua) Despite the situation (Davka) represent our
         culture and we refer to these values as the ABCD of AIQ.
       </p>
-  
+
     </div>
-  
+
     <div class="relative w-full max-w-[350px] mx-auto px-4">
       <!-- Carousel Wrapper -->
       <div class="overflow-hidden">
@@ -98,7 +98,7 @@
               </div>
             </div>
           </div>
-  
+
           <!-- Card 3 -->
           <div *ngIf="currentIndex==3" class="min-w-full p-4">
             <div class="max-w-[300px] w-full  h-[300px]  rounded-lg bordershadow continents">
@@ -112,7 +112,7 @@
               </div>
             </div>
           </div>
-  
+
           <!-- Card 4 -->
           <div *ngIf="currentIndex==4" class="min-w-full p-4">
             <div class="max-w-[300px] w-full h-[300px]  rounded-lg bordershadow continents">
@@ -128,12 +128,12 @@
           </div>
         </div>
       </div>
-    
+
       <!-- Previous Button -->
       <button (click)="prevSlide()" class="absolute animate-pulse left-0 top-1/2 h-10 w-10 p-2 bg-gray-700 text-white rounded-full hover:bg-gray-900">
         &#8592;
       </button>
-    
+
       <!-- Next Button -->
       <button (click)="nextSlide()" class="absolute animate-pulse right-0 top-1/2 h-10 w-10 p-2 bg-gray-700 text-white rounded-full hover:bg-gray-900">
         &#8594;
@@ -142,7 +142,7 @@
   </div>
 
 
-  
+
 
 
   <!-- <div class="flex justify-around flex-wrap gap-5 items-center">
@@ -201,7 +201,7 @@
 </section>
 
 <section class="montserrat flex justify-center">
-  <div class="w-screen py-20 bg-[#171752] bg-[url('/assets/company-bg.svg')]">
+  <div class="w-full py-8 lg:py-20 bg-[#171752] bg-[url('/assets/company-bg.svg')]">
     <div
       class="bg-white mx-auto w-11/12 md:w-2/3 py-10 px-4 md:px-16 rounded-2xl"
     >
@@ -209,7 +209,7 @@
         Ready to collaborate with like-minded professionals? Click here to join a vibrant community where innovation meets teamwork. Let’s build something great together!
       </h3>
       <div class="">
-          
+
         <div class="mx-auto my-6 flex justify-center">
           <button (click)="route('contact-us')"
             type="submit"
