@@ -57,22 +57,22 @@
       </svg>
     </button>
   </div>
-  <div class="flex scrollbar-hide overflow-x-auto gap-3" #reviewsCarousel>
+  <div class="flex scrollbar-hide overflow-x-auto gap-4" #reviewsCarousel>
     <div *ngFor="let review of reviewItem">
       <div
-        class="max-w-[400px] max-h-[400px] min-w-[400px] p-6 md:p-10 bg-[#F9FAFB] border-[#E4E7EC] rounded-xl shadow-sm border-2"
+        class="max-w-[400px] h-full min-h-[400px] min-w-[400px] p-6 md:p-10 bg-[#F9FAFB] border-[#E4E7EC] rounded-xl shadow-sm border-2"
       >
         <div class="my-5">
-          <img [src]="review.image" alt="" class="rounded-full" />
+          <img [src]="review.image" alt="" class="rounded-full object-fill w-12 h-12" />
         </div>
         <div class="">
-          <h1 class="font-normal text-[#344054] font-inter text-base">{{ review.content }}</h1>
+          <h1 class="font-normal text-[#344054] font-inter text-base capitalize">{{ review.content }}</h1>
         </div>
         <div class="flex mt-5">
-          <img [src]="review.profile" alt="" class="rounded-full" />
+          <!-- <img [src]="review.profile" alt="" class="rounded-full" /> -->
           <div class="mx-2 font-inter">
-            <h1 class="font-medium text-[#344054] text-lg">{{ review.name }}</h1>
-            <p class="font-light text-[#344054] text-xs">{{ review.office }}</p>
+            <h1 class="font-medium text-[#344054] text-lg capitalize">{{ review.name }}</h1>
+            <p class="font-light text-[#344054] text-xs capitalize">{{ review.office }}</p>
           </div>
         </div>
       </div>
