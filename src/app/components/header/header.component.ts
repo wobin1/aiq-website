@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { CommonModule } from '@angular/common'; 
+import { CommonModule } from '@angular/common';
 import { Router } from "@angular/router";
 import { RouterModule } from '@angular/router';
 
@@ -17,10 +17,11 @@ export class HeaderComponent {
   constructor(private router: Router) {}
 
   navItems = [
-    { path: "/", label: "Home" }, 
+    { path: "/", label: "Home" },
     { path: "/products", label: "Product" },
     { path: "/company", label: "Company" },
     { path: "/careers", label: "Careers" },
+    { path: "/contact-us", label: "Contact us" },
   ];
   navigateTo(route: string): void {
     this.router.navigate([route]);
