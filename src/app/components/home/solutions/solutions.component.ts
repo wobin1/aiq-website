@@ -38,13 +38,13 @@ export class SolutionsComponent {
       svg: 'assets/Research.svg'
     },
     {
-      h1: 'Humanitarian',
+      h1: 'Humanitarian Organizations',
       p: 'Improve disaster response and resource allocation with real-time data insights.',
       img: 'assets/image 31.jpg',
       svg: 'assets/Give Money.svg'
     },
     {
-      h1: 'Others',
+      h1: 'Other Businesses',
       p: ' Our suites of products are also used by Law Enforcement Agencies, Hospitals, and Public and Private Offices.',
       img: 'assets/image 52.jpg',
       svg: 'assets/categories.svg'
