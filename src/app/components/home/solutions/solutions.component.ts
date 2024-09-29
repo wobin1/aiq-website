@@ -27,13 +27,13 @@ export class SolutionsComponent {
     },
     {
       h1: 'Media and Information',
-      p: 'Investigate stories with advanced research tools and access critical information quickly to support investigative reporting.',
+      p: ' Investigate stories with advanced research tools and access critical information quickly to support investigative reporting.',
       img: 'assets/image 30.jpg',
       svg: 'assets/megaphone.svg'
     },
     {
       h1: 'Researchers',
-      p: ' Leverage AI to analyze large datasets and uncover new insights.',
+      p: 'Leverage AI to analyze large datasets and uncover new insights.',
       img: 'assets/image 32.jpg',
       svg: 'assets/Research.svg'
     },
@@ -45,7 +45,7 @@ export class SolutionsComponent {
     },
     {
       h1: 'Other Businesses',
-      p: ' Our suites of products are also used by Law Enforcement Agencies, Hospitals, and Public and Private Offices.',
+      p: ' Our suites of products are also used by Public and Private Businesses, Law Enforcement Agencies, Hospitals, and the General Public.',
       img: 'assets/image 52.jpg',
       svg: 'assets/categories.svg'
     }
