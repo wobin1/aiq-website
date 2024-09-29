@@ -73,7 +73,7 @@
               Careers
             </a>
           </li>
-          <li>
+          <!-- <li>
             <a
               class="mx-3 text-gray-500 hover:text-black cursor-pointer"
               routerLink="/contact-us"
@@ -81,7 +81,7 @@
             >
               Contact us
             </a>
-          </li>
+          </li> -->
         </ul>
       </div>
       <div class="font-inter">
@@ -118,13 +118,13 @@
               <button
                 [routerLink]="[item.path]"
                 routerLinkActive="font-semibold text-gray-900"
-                [routerLinkActiveOptions]="{ exact: item.path === '/home' }" 
+                [routerLinkActiveOptions]="{ exact: item.path === '/home' }"
                 class="py-3 px-6 m-2 rounded-lg w-4/5 text-center text-[#171752]"
               >
                 {{ item.label }}
               </button>
             </div>
-            
+
             <div class="font-inter flex justify-center my-5">
               <a
                 ><button
