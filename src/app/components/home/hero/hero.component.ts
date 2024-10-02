@@ -13,7 +13,12 @@ export class HeroComponent {
   constructor(private router: Router){}
 
   route(page:string){
+    console.log('button clicked')
     this.router.navigateByUrl(page)
+  }
+
+  click(){
+    console.log('click')
   }
 
 

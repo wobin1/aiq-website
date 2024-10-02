@@ -26,12 +26,6 @@ export class SolutionsComponent {
       svg: 'assets/Security.svg'
     },
     {
-      h1: 'Media and Information',
-      p: ' Investigate stories with advanced research tools and access critical information quickly to support investigative reporting.',
-      img: 'assets/image 30.jpg',
-      svg: 'assets/megaphone.svg'
-    },
-    {
       h1: 'Researchers',
       p: 'Leverage AI to analyze large datasets and uncover new insights.',
       img: 'assets/image 32.jpg',
@@ -42,6 +36,12 @@ export class SolutionsComponent {
       p: 'Improve disaster response and resource allocation with real-time data insights.',
       img: 'assets/image 31.jpg',
       svg: 'assets/Give Money.svg'
+    },
+    {
+      h1: 'Media and Information',
+      p: ' Investigate stories with advanced research tools and access critical information quickly to support investigative reporting.',
+      img: 'assets/image 30.jpg',
+      svg: 'assets/megaphone.svg'
     },
     {
       h1: 'Other Businesses',
@@ -57,7 +57,7 @@ export class SolutionsComponent {
     this.currentSlideIndex = index;
   }
 
-   x = ["Defence and Intelligence", "Media", "Researchers", "Humanitarians", "Others"];
+   x = ["Defence and Intelligence", "Researchers", "Humanitarians", "Media", "Others"];
 }
 
 

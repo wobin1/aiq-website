@@ -4,31 +4,31 @@
       <img src="assets/image 39.svg" alt="" />
     </div>
     <div class="w-[45%] md:w-1/5">
-      <ul class="list-none">
+      <ul  class="list-none cursor-pointer">
         <li class="mb-5">Products</li>
-        <li class="my-2 font-light text-gray-500">Hydra</li>
-        <li class="my-2 font-light text-gray-500">Data Camp</li>
-        <li class="my-2 font-light text-gray-500">One Search</li>
-        <li class="my-2 font-light text-gray-500">Civet</li>
+        <li class="my-2 font-light text-gray-500" (click)="route('/products', 'hydra')">Hydra</li>
+        <li class="my-2 font-light text-gray-500" (click)="route('/products', 'data-camp')">Data Camp</li>
+        <li class="my-2 font-light text-gray-500" (click)="route('/products', 'one-search')">One Search</li>
+        <li class="my-2 font-light text-gray-500" (click)="route('/products', 'civet')">Civet</li>
       </ul>
     </div>
     <div class="w-[45%] md:w-1/5">
-      <ul>
+      <ul class="cursor-pointer">
         <li class="mb-5">Contact Us</li>
         <li class="my-2 font-light text-gray-500">Send a Message</li>
       </ul>
     </div>
 
     <div class="w-[45%] md:w-1/5">
-      <ul class="list-none">
+      <ul class="list-none cursor-pointer">
         <li class="mb-5">Company</li>
-        <li class="my-2 font-light text-gray-500">About Us</li>
-        <li class="my-2 font-light text-gray-500">Customer Stories</li>
-        <li class="my-2 font-light text-gray-500">AIQ in the press</li>
+        <li class="my-2 font-light text-gray-500" (click)="route('/company', 'about-us')">About Us</li>
+        <!-- <li class="my-2 font-light text-gray-500">Customer Stories</li>
+        <li class="my-2 font-light text-gray-500">AIQ in the press</li> -->
       </ul>
     </div>
     <div class="w-[45%] md:w-1/5">
-      <ul class="list-none">
+      <ul class="list-none cursor-pointer">
         <li class="mb-5">Careers</li>
         <li class="my-2 font-light text-gray-500">Join Us</li>
       </ul>
@@ -39,9 +39,9 @@
       <p class="text-gray-600">
         Contact Us <span class="text-white mx-2">hello&#64;AIQ.com</span>
       </p>
-      <div class="flex">
+      <div class="flex ">
         <span class="text-gray-500 mx-5">Follow Us </span>
-        <div class="flex">
+        <div class="flex gap-1">
           <img src="assets/Fb.svg" alt="" /><img
             src="assets/Tw.svg"
             alt=""

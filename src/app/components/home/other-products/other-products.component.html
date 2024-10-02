@@ -19,17 +19,14 @@
           and make data-driven decisions.
         </p>
 
-        <button
-          class="py-2 font-inter md:py-3 px-6 text-sm lg:px-10 my-0 md:my-3 bg-gray-200 text-black font-medium rounded-lg hover:bg-slate-400"
-        >
-          Try a Demo
-        </button>
-        <button
-          class="py-2 font-inter md:py-3 px-6 lg:px-10 text-sm my-3 bg-black text-white font-medium rounded-lg hover:bg-gray-900 mx-2"
-          id="btn"
-        >
-          Play
-        </button>
+        <a href="https://hydrainsights.online/" target="_blank" >
+          <button
+            class="py-2 font-inter md:py-3 px-6 text-sm lg:px-10 my-0 md:my-3 bg-gray-200 text-black font-medium rounded-lg hover:bg-slate-400"
+          >
+            Try a Demo
+          </button>
+        </a>
+
       </div>
     </div>
     <video
@@ -60,9 +57,7 @@
   <div
     class="flex flex-wrap justify-center gap-3 lg:flex-nowrap m-0 container mx-auto"
   >
-    <div
-      class="w-11/12 md:w-5/12 lg:w-2/6 rounded-xl mx-auto my-5 border-2 border-transparent shadow-md bg-[#F9FAFB]"
-    >
+    <div (click)="route('products', 'data-camp')" class="w-11/12 md:w-5/12 lg:w-2/6 rounded-xl mx-auto my-5 border-2 border-transparent shadow-md bg-[#F9FAFB]">
       <div class="rounded-t-xl bg-card">
         <img loading="lazy" src="assets/image 47.png" alt="" class="mx-auto h-60 w-auto" />
       </div>
@@ -77,9 +72,7 @@
       </div>
     </div>
 
-    <div
-      class="w-11/12 md:w-5/12 lg:w-2/6 rounded-xl mx-auto my-5 border-2 border-transparent shadow-md bg-[#F9FAFB]"
-    >
+    <div (click)="route('products', 'geo-ai')"  class="w-11/12 md:w-5/12 lg:w-2/6 rounded-xl mx-auto my-5 border-2 border-transparent shadow-md bg-[#F9FAFB]">
       <div class="rounded-t-xl bg-card">
         <img loading="lazy" src="assets/product/geo-ai.PNG" alt="" class="mx-auto h-60 w-auto" />
       </div>
@@ -90,9 +83,8 @@
         </p>
       </div>
     </div>
-    <div
-    class="w-11/12 md:w-5/12 lg:w-2/6 rounded-xl mx-auto my-5 border-2 border-transparent shadow-md bg-[#F9FAFB]"
-  >
+
+    <div (click)="route('products', 'one-search')"  class="w-11/12 md:w-5/12 lg:w-2/6 rounded-xl mx-auto my-5 border-2 border-transparent shadow-md bg-[#F9FAFB]">
     <div class="rounded-t-xl bg-card">
       <img loading="lazy" src="assets/product/one-search.png" alt="" class="mx-auto h-60 w-auto" />
     </div>
@@ -103,9 +95,8 @@
       </p>
     </div>
   </div>
-    <div
-      class="w-11/12 md:w-5/12 lg:w-2/6 rounded-xl mx-auto my-5 border-2 border-transparent shadow-md bg-[#F9FAFB]"
-    >
+
+    <div (click)="route('products', 'civet')"  class="w-11/12 md:w-5/12 lg:w-2/6 rounded-xl mx-auto my-5 border-2 border-transparent shadow-md bg-[#F9FAFB]">
       <div class="rounded-t-xl bg-card">
         <img loading="lazy" src="assets/image 50.jpg" alt="" class="mx-auto h-60 w-auto" />
       </div>
@@ -119,6 +110,7 @@
         </p>
       </div>
     </div>
+
   </div>
   <div class="flex justify-center">
     <button
