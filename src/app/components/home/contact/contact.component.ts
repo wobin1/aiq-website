@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,5 +9,12 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
+
+
+  constructor(private router: Router){}
+
+  route(){
+    this.router.navigateByUrl('contact-us')
+  }
 
 }
